@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "La Hacienda Site",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

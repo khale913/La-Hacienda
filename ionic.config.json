@@ -1,0 +1,7 @@
+{
+  "name": "La Hacienda Site",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
