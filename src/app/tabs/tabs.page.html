@@ -1,20 +1,45 @@
 <ion-tabs>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
-    </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
-    </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
-    </ion-tab-button>
+  <ion-tab-bar slot="top">
+
+    <div class="title-div" (click)="navigateHome()">
+      <h2 class="title">La Hacienda</h2>
+      <p class="under-title">Mexican Restaurant</p>
+      <!-- <ion-img class="title-img" src="assets/images/LaHacienda-text.png"></ion-img> -->
+    </div>
+
+    <div class="icon-div">
+      <ion-icon size="large" name="menu-outline"></ion-icon>
+    </div>
+
+    <div class="nav-tabs">
+      <ion-tab-button class="nav-btn" tab="tab6">
+        <!-- <ion-icon name="triangle"></ion-icon> -->
+        <ion-label class="nav-label">ABOUT US</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="nav-btn" tab="tab2">
+        <!-- <ion-icon name="ellipse"></ion-icon> -->
+        <ion-label class="nav-label">MENU</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="nav-btn" tab="tab3">
+        <!-- <ion-icon name="square"></ion-icon> -->
+        <ion-label class="nav-label">LOCATIONS</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="nav-btn" tab="tab4">
+        <!-- <ion-icon name="square"></ion-icon> -->
+        <ion-label class="nav-label">CAREERS</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="nav-btn" tab="tab5">
+        <!-- <ion-icon name="square"></ion-icon> -->
+        <ion-label class="nav-label">CONTACT US</ion-label>
+      </ion-tab-button>
+    </div>
   </ion-tab-bar>
 
 </ion-tabs>
