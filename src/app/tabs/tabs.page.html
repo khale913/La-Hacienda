@@ -5,9 +5,10 @@
   <ion-tab-bar slot="top">
 
     <div class="title-div" (click)="navigateHome()">
-      <!-- <h2 class="title">La Hacienda</h2>
-      <p class="under-title">Mexican Restaurant</p> -->
-      <ion-img class="title-img" src="assets/images/LaHacienda-text.png"></ion-img>
+      <h2 class="title">La Hacienda</h2>
+      <p class="under-title">Mexican Restaurant</p>
+      <!-- <ion-img class="title-img" src="assets/images/LaHacienda-text.png"></ion-img> -->
+      <!-- <p class="under-title">Mexican Restaurant</p> -->
     </div>
 
     <div class="icon-div">
@@ -15,10 +16,9 @@
     </div>
 
     <div class="nav-tabs">
-      <ion-tab-button [ngClass]="{'active-label': activePage === '1'}" (click)="activeTab('1')" class="nav-btn"
-        tab="tab6">
+      <ion-tab-button (click)="activeTab('1')" class="nav-btn" tab="tab6">
         <!-- <ion-icon name="triangle"></ion-icon> -->
-        <ion-label class="nav-label">ABOUT US</ion-label>
+        <ion-label [ngClass]="{'active-label': activePage === '1'}" class="nav-label">ABOUT US</ion-label>
       </ion-tab-button>
 
       <ion-tab-button [ngClass]="{'active-label': activePage === '2'}" (click)="activeTab('2')" class="nav-btn"

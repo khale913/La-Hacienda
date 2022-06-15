@@ -24,10 +24,15 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 @font-face {
     font-family: 'Proxima-Black';
     src: url("assets/Fonts/Proxima Nova Black.otf")
+}
+@font-face {
+    font-family: 'ProximaNova-Reg';
+    src: url("assets/Fonts/ProximaNova-Reg.ttf")
 }
 
 @font-face {

@@ -10,6 +10,9 @@ ion-tab-bar{
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+  border: none;
+  border-style: none;
+  // border-radius: 5px;
 }
 
 ion-tab-button {
@@ -17,9 +20,9 @@ ion-tab-button {
   // background-color: #ECEBE6;
   background-color: white;
   --ripple-color: transparent;
-  color: black;
-  --color-selected: rgba(0, 0, 0, 0.656);
-  padding-right: 2rem;
+  color: red;
+  --color-selected: rgba(0, 0, 0, 0.34);
+  margin-right: 2rem;
 }
 
 .nav-tabs {
@@ -32,7 +35,7 @@ ion-label {
 }
 
 ion-label:hover {
-  color: rgba(0, 0, 0, 0.656);
+  color: rgba(0, 0, 0, 0.34);
 }
 
 .title-div {
@@ -44,8 +47,11 @@ ion-label:hover {
 }
 
 .title {
-  color: black;
-  font-size: 2rem;
+  font-family: 'Satisfy', cursive;
+  font-weight: 600;
+  // color: black;
+  color: red;
+  font-size: 2.3rem;
 }
 
 .title-img {
@@ -53,7 +59,8 @@ ion-label:hover {
 }
 
 .under-title {
-  color: black;
+  // color: black;
+  color: red;
   font-size: 1rem;
 }
 
@@ -62,7 +69,8 @@ ion-label:hover {
 }
 
 .active-label {
-  color: red;
+  color: black;
+  // border-bottom: 2px solid black;
 }
 
 @media only screen and (max-width: 850px) {
