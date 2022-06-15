@@ -18,7 +18,7 @@ ion-tab-button {
   background-color: white;
   --ripple-color: transparent;
   color: black;
-  --color-selected: red;
+  --color-selected: rgba(0, 0, 0, 0.656);
   padding-right: 2rem;
 }
 
@@ -32,7 +32,7 @@ ion-label {
 }
 
 ion-label:hover {
-  color: red;
+  color: rgba(0, 0, 0, 0.656);
 }
 
 .title-div {
@@ -59,6 +59,10 @@ ion-label:hover {
 
 .icon-div {
   display: none;
+}
+
+.active-label {
+  color: red;
 }
 
 @media only screen and (max-width: 850px) {
