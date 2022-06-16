@@ -23,13 +23,21 @@ ion-tab-button {
   --ripple-color: transparent;
   color: red;
   --color-selected: rgba(0, 0, 0, 0.34);
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-size: .8rem;
 }
 
 .nav-tabs {
   display: flex;
   padding-right: 1rem;
+}
+
+.location-label {
+  display: flex;
+}
+
+ion-icon {
+  padding-left: 2px;
 }
 
 ion-label {
@@ -69,6 +77,61 @@ ion-label:hover {
 
 .icon-div {
   display: none;
+}
+
+
+
+ion-button {
+  --background: white;
+  --background-activated: transparent;
+  --border-style: none;
+  --border-color: transparent;
+  --box-shadow: none;
+}
+
+// popover modal
+.modal-content {
+  --background: rgb(255, 255, 255);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  padding-right: 1rem;
+  padding-top: 1rem;
+  --background: transparent;
+}
+
+.modal-tabs {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  align-items: center;
+  border-bottom: 2px solid black;
+  margin: 0 15px;
+}
+
+.modal-btn {
+  margin: 0;
+  padding: 0;
+  min-width: 120%;
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+  white-space: nowrap;
+}
+
+.modal-label {
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.modal-header-text {
+  color: black;
+  font-family: 'Satisfy', cursive;
 }
 
 .active-label {
@@ -141,6 +204,8 @@ ion-label:hover {
     display: block;
     padding-right: 1rem;
   }
+
+
 }
 
 

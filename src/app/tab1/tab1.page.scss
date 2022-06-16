@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+
 header img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   filter: brightness(.8);
+}
+
+header {
+  background-color: red;
 }
 
 section {
@@ -59,6 +64,12 @@ section {
 .section-btn:hover {
   background-color: red;
   color: white;
+}
+
+.footer-container {
+  width: 100%;
+  height: 10vh;
+  background-color: red;
 }
 
 @media only screen and (max-width: 900px) {
@@ -120,38 +131,5 @@ section {
     left: 50%;
   }
 
-  // .img-text {
-  //   font-family: 'Satisfy', cursive;
-  //   font-weight: 900;
-  //   line-height: 7rem;
-  //   font-size: 8rem;
-  // }
 
-  // .img-under_text {
-  //   font-family: 'ProximaNova-Reg';
-  //   font-weight: 400;
-  //   font-size: 1.8rem;
-  //   white-space: nowrap;
-  //   margin-bottom: 1rem;
-  //   letter-spacing: .8rem;
-  // }
-
-  // .btn-container {
-  //   align-items: center;
-  // }
-
-  // .section-btn {
-  //   font-family: 'ProximaNova-Reg';
-  //   font-size: 1rem;
-  //   background-color: transparent;
-  //   color: white;
-  //   border: 1.5px solid white;
-  //   border-radius: 50px;
-  //   padding: .5rem 2rem;
-  //   margin-right: 1rem;
-  //   margin-left: 1rem;
-  //   max-width: 9em;
-  //   white-space: nowrap;
-  //   text-align: center;
-  // }
 }

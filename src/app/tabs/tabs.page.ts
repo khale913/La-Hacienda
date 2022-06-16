@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ModalController } from '@ionic/angular';
+;
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
@@ -10,12 +11,12 @@ export class TabsPage {
 
   activePage: any = '';
 
-  constructor(public router: Router,) { }
+  constructor(public router: Router, public modalCtrl: ModalController) { }
 
   navigateHome() {
     this.router.navigate(['/tabs/tab1']);
-    localStorage.setItem('curPage', '6');
-    this.activePage = '6';
+    localStorage.setItem('curPage', '1');
+    this.activePage = '1';
   }
 
   activeTab(page: any) {
@@ -23,6 +24,18 @@ export class TabsPage {
     // this.storage.setString('curTab', page);
     localStorage.setItem('curPage', page);
     this.activePage = page;
+  }
+
+  navigatePage(page: any) {
+    const pageCount = page.slice(-1);
+    console.log(pageCount);
+    this.activePage = pageCount;
+    this.router.navigate(['/tabs/' + page]);
+    this.modalCtrl.dismiss();
+  }
+
+  dismissModal() {
+    this.modalCtrl.dismiss();
   }
 
 }

@@ -12,13 +12,17 @@
     </div>
 
     <div class="icon-div">
-      <ion-icon size="large" name="menu-outline"></ion-icon>
+      <ion-button id="trigger-button">
+        <ion-icon size="large" name="menu-outline"></ion-icon>
+      </ion-button>
     </div>
 
+
     <div class="nav-tabs">
-      <ion-tab-button (click)="activeTab('1')" class="nav-btn" tab="tab6">
+      <ion-tab-button (click)="activeTab('6')" class="nav-btn" tab="tab6">
         <!-- <ion-icon name="triangle"></ion-icon> -->
-        <ion-label [ngClass]="{'active-label': activePage === '1'}" class="nav-label">ABOUT US</ion-label>
+        <ion-label [ngClass]="{'active-label': activePage === '6'}" class="nav-label">
+          ABOUT US</ion-label>
       </ion-tab-button>
 
       <ion-tab-button [ngClass]="{'active-label': activePage === '2'}" (click)="activeTab('2')" class="nav-btn"
@@ -30,7 +34,8 @@
       <ion-tab-button [ngClass]="{'active-label': activePage === '3'}" (click)="activeTab('3')" class="nav-btn"
         tab="tab3">
         <!-- <ion-icon name="square"></ion-icon> -->
-        <ion-label class="nav-label">LOCATIONS</ion-label>
+        <ion-label class="nav-label location-label">LOCATIONS <ion-icon name="chevron-down-outline"></ion-icon>
+        </ion-label>
       </ion-tab-button>
 
       <ion-tab-button [ngClass]="{'active-label': activePage === '4'}" (click)="activeTab('4')" class="nav-btn"
@@ -44,7 +49,57 @@
         <!-- <ion-icon name="square"></ion-icon> -->
         <ion-label class="nav-label">CONTACT US</ion-label>
       </ion-tab-button>
+
+      <!-- <ion-modal trigger="trigger-button">
+        <ng-template>
+          <ion-content>Modal Content</ion-content>
+        </ng-template>
+      </ion-modal> -->
     </div>
   </ion-tab-bar>
 
 </ion-tabs>
+
+<!-- modal popover -->
+
+<ion-modal trigger="trigger-button">
+  <ng-template>
+    <ion-content class="modal-content">
+      <div class="modal-header">
+        <ion-button size="large" class="close-btn" (click)="dismissModal()">
+          <ion-icon size="large" name="close-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="modal-tab-container">
+        <div class="modal-tabs">
+          <ion-tab-button [ngClass]="{'active-label': activePage === '6'}" class="modal-btn">
+            <ion-label (click)="navigatePage('tab6')" class="modal-label">ABOUT US</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button [ngClass]="{'active-label': activePage === '2'}" class="modal-btn">
+            <ion-label (click)="navigatePage('tab2')" class="modal-label">MENU</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button [ngClass]="{'active-label': activePage === '3'}" class="modal-btn">
+            <ion-label (click)="navigatePage('tab3')" class="modal-label">LOCATIONS</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button [ngClass]="{'active-label': activePage === '4'}" class="modal-btn">
+            <ion-label (click)="navigatePage('tab4')" class="modal-label">CAREERS</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button [ngClass]="{'active-label': activePage === '5'}" class="modal-btn">
+            <ion-label (click)="navigatePage('tab5')" class="modal-label">CONTACT US</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button class="modal-btn">
+            <ion-label class="modal-label">ORDER ONLINE</ion-label>
+          </ion-tab-button>
+        </div>
+
+      </div>
+
+    </ion-content>
+  </ng-template>
+</ion-modal>
