@@ -9,7 +9,7 @@ header img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  filter: brightness(.7);
+  filter: brightness(.8);
 }
 
 header {
@@ -41,6 +41,7 @@ section {
   font-size: 8rem;
   letter-spacing: 1px;
   color: white;
+  white-space: nowrap;
 }
 
 .img-under_text {
@@ -49,7 +50,7 @@ section {
   font-size: 1.9rem;
   white-space: nowrap;
   margin-bottom: 1rem;
-  letter-spacing: .4rem;
+  letter-spacing: .3rem;
 }
 
 .btn-container {
