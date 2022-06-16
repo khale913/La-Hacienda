@@ -21,10 +21,10 @@ ion-tab-button {
   // background-color: #ECEBE6;
   background-color: white;
   --ripple-color: transparent;
-  color: red;
+  color: rgb(181, 0, 0);
   --color-selected: rgba(0, 0, 0, 0.34);
   margin-right: 1rem;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .nav-tabs {
@@ -148,7 +148,7 @@ ion-button {
 
   ion-tab-button {
     padding: 0;
-    font-size: .75rem;
+    font-size: .9rem;
   }
 
   .title-div {
@@ -173,8 +173,8 @@ ion-button {
 @media only screen and (max-width: 700px) {
   ion-tab-bar{
     padding: 0;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 1rem;
     flex-direction: row;
   }
@@ -188,7 +188,7 @@ ion-button {
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .under-title {

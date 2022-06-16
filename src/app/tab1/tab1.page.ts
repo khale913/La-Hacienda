@@ -12,7 +12,7 @@ export class Tab1Page {
   constructor(public router: Router, public modalCtrl: ModalController,) { }
 
   navMenu() {
-    this.router.navigate(['/tabs/tab2']);
+    this.router.navigate(['/tabs/menu']);
   }
 
 

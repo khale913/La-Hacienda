@@ -13,7 +13,7 @@ header img {
 }
 
 header {
-  background-color: red;
+  background-color: rgb(181, 0, 0);
 }
 
 section {
@@ -66,14 +66,42 @@ section {
 }
 
 .section-btn:hover {
-  background-color: red;
+  background-color: rgb(181, 0, 0);
   color: white;
 }
 
+
+
+// footer
 .footer-container {
   width: 100%;
-  height: 10vh;
-  background-color: red;
+  background-color: rgb(181, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.footer-tab-header {
+  font-family: 'Proxima-Black';
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-tab-sub {
+  font-family: 'ProximaNova-Reg';
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.footer-tab-sub:hover {
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -98,8 +126,8 @@ section {
 
   .img-text {
     font-weight: 900;
-    line-height: 5rem;
-    font-size: 5rem;
+    line-height: 6rem;
+    font-size: 6rem;
   }
 
   .img-under_text {
@@ -112,25 +140,67 @@ section {
     // align-items: center;
   }
 
+  // .section-btn {
+  //   font-size: .9rem;
+  //   color: white;
+  //   border: 1px solid white;
+  //   border-radius: 50px;
+  //   // padding: .5rem 1rem;
+
+  //   // max-width: 8em;
+
+  //   margin-bottom: .5rem;
+  // }
+
   .section-btn {
-    font-size: .9rem;
-    color: white;
-    border: 1px solid white;
-    border-radius: 50px;
-    padding: .5rem 1rem;
+    margin: 0 1rem;
 
-    max-width: 8em;
+    font-size: 1.2rem;
 
-    margin-bottom: .5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
 
+  header img {
+    width: 100vw;
+    height: 80vh;
+  }
+
   section {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
+  }
+
+  .img-under_text {
+    letter-spacing: .2rem;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-btn {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+
+
+
+    margin-bottom: .5rem;
   }
 
 
