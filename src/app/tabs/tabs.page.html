@@ -12,7 +12,7 @@
     </div>
 
     <div class="icon-div">
-      <ion-button id="trigger-button">
+      <ion-button (click)="initModal($event)">
         <ion-icon size="large" name="menu-outline"></ion-icon>
       </ion-button>
     </div>
@@ -26,7 +26,7 @@
       </ion-tab-button>
 
       <ion-tab-button [ngClass]="{'active-label': activePage === '2'}" (click)="activeTab('2')" class="nav-btn"
-        tab="tab2">
+        tab="menu">
         <!-- <ion-icon name="ellipse"></ion-icon> -->
         <ion-label class="nav-label">MENU</ion-label>
       </ion-tab-button>
@@ -62,7 +62,7 @@
 
 <!-- modal popover -->
 
-<ion-modal trigger="trigger-button">
+<!-- <ion-modal trigger="trigger-button">
   <ng-template>
     <ion-content class="modal-content">
       <div class="modal-header">
@@ -102,4 +102,4 @@
 
     </ion-content>
   </ng-template>
-</ion-modal>
+</ion-modal> -->

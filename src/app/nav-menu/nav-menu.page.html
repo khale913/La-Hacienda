@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="modal-header">
+    <ion-button size="large" class="close-btn" (click)="dismissModal()">
+      <ion-icon size="large" name="close-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="modal-tab-container">
+    <div class="modal-tabs">
+      <ion-tab-button [ngClass]="{'active-label': activePage === '6'}" class="modal-btn">
+        <ion-label (click)="navigatePage('tab6')" class="modal-label">ABOUT US</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [ngClass]="{'active-label': activePage === 'u'}" class="modal-btn">
+        <ion-label (click)="navigatePage('menu')" class="modal-label">MENU</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [ngClass]="{'active-label': activePage === '3'}" class="modal-btn">
+        <ion-label (click)="navigatePage('tab3')" class="modal-label">LOCATIONS</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [ngClass]="{'active-label': activePage === '4'}" class="modal-btn">
+        <ion-label (click)="navigatePage('tab4')" class="modal-label">CAREERS</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [ngClass]="{'active-label': activePage === '5'}" class="modal-btn">
+        <ion-label (click)="navigatePage('tab5')" class="modal-label">CONTACT US</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button class="modal-btn">
+        <ion-label class="modal-label">ORDER ONLINE</ion-label>
+      </ion-tab-button>
+    </div>
+
+  </div>
+</ion-content>

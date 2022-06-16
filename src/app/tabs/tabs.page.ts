@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { NavMenuPage } from '../nav-menu/nav-menu.page';
 ;
 @Component({
   selector: 'app-tabs',
@@ -12,6 +13,19 @@ export class TabsPage {
   activePage: any = '';
 
   constructor(public router: Router, public modalCtrl: ModalController) { }
+
+  // CREATION OF POPUP MODAL ONCLICK add brand
+  async initModal(e: any) {
+    const modal = await this.modalCtrl.create({
+      component: NavMenuPage,
+      componentProps: {
+      },
+
+    });
+    console.log(e);
+    await modal.present();
+    return;
+  }
 
   navigateHome() {
     this.router.navigate(['/tabs/tab1']);

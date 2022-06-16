@@ -17,6 +17,14 @@ const routes: Routes = [
   {
     path: 'tab6',
     loadChildren: () => import('./tab6/tab6.module').then( m => m.Tab6PageModule)
+  },
+  {
+    path: 'nav-menu',
+    loadChildren: () => import('./nav-menu/nav-menu.module').then( m => m.NavMenuPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   }
 ];
 @NgModule({
