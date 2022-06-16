@@ -26,12 +26,21 @@ section {
   text-align: center;
 }
 
+@font-face {
+  font-family: 'Quigley';
+  src: url('../../assets/Fonts/QUIGLEYW-webfont.ttf');
+}
+
 .img-text {
   // font-family: 'Satisfy', cursive;
-  font-family: 'Leckerli One', cursive;
+  // font-family: 'Leckerli One', cursive;
+  // font-family: 'Proxima-Black';
+  font-family: 'Quigley';
   font-weight: 900;
-  line-height: 8rem;
+  line-height: 6rem;
   font-size: 8rem;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .img-under_text {
@@ -40,7 +49,7 @@ section {
   font-size: 1.9rem;
   white-space: nowrap;
   margin-bottom: 1rem;
-  letter-spacing: .8rem;
+  letter-spacing: .4rem;
 }
 
 .btn-container {
@@ -108,7 +117,7 @@ section {
 @media only screen and (max-width: 900px) {
   .img-text {
     font-weight: 900;
-    line-height: 7rem;
+    line-height: 5rem;
     font-size: 7rem;
   }
 
@@ -127,31 +136,16 @@ section {
 
   .img-text {
     font-weight: 900;
-    line-height: 6rem;
-    font-size: 6rem;
+    line-height: 4rem;
+    font-size: 7rem;
+    margin-bottom: .5rem;
   }
 
   .img-under_text {
     letter-spacing: .5rem;
   }
 
-  .btn-container {
-    // display: flex;
-    // // flex-direction: column;
-    // align-items: center;
-  }
 
-  // .section-btn {
-  //   font-size: .9rem;
-  //   color: white;
-  //   border: 1px solid white;
-  //   border-radius: 50px;
-  //   // padding: .5rem 1rem;
-
-  //   // max-width: 8em;
-
-  //   margin-bottom: .5rem;
-  // }
 
   .section-btn {
     margin: 0 1rem;
@@ -173,6 +167,12 @@ section {
 }
 
 @media only screen and (max-width: 450px) {
+
+  .img-text {
+    font-weight: 900;
+    line-height: 4.5rem;
+    font-size: 7rem;
+  }
 
   header img {
     width: 100vw;

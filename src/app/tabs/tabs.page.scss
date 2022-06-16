@@ -27,6 +27,10 @@ ion-tab-button {
   font-size: .9rem;
 }
 
+.hacienda-img {
+  max-width: 250px;
+}
+
 .nav-tabs {
   display: flex;
   padding-right: 1rem;
@@ -178,6 +182,10 @@ ion-button {
     padding-bottom: 1rem;
     padding-left: 1rem;
     flex-direction: row;
+  }
+
+  .hacienda-img {
+    max-width: 200px;
   }
 
   ion-tab-button {
