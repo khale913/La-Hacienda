@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-tab6',
   templateUrl: './tab6.page.html',
@@ -10,6 +11,7 @@ export class Tab6Page implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('about us');
   }
 
 }
