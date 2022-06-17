@@ -9,9 +9,9 @@
   <div class="container">
     <!-- <img class="food-img" src="../../assets/images/lindsay-moe-WZzrQX5k2Ug-unsplash.jpg" alt="Cinque Terre" width="1000"
       height="300"> -->
-    <img class="food-img" src="../../assets/images/AboutBackground.jpg" alt="">
+    <img class="food-img" src="../../assets/images/AboutBackground.jpg" alt="" loading="lazy">
     <!-- <img src="../../assets/images/brickpattern.jpg" alt=""> -->
-    <div class="bottomleft"> <img class="taco-icon" src="../../assets/icon/taco.png" alt="">
+    <div class="bottomleft"> <img class="taco-icon" src="../../assets/icon/taco.png" alt="" loading="lazy">
       <h2 class="fresh-text">Freshness In</h2>
       <h2 class="fresh-text"> Every Bite</h2>
       <p class="info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aut quasi molestias. Ipsum
@@ -29,7 +29,8 @@
   <div class="bottom-container">
     <div class="hacienda-img-container">
       <div class="cover-div">
-        <img class="cover" src="../../assets/images/LaHaciendaFood.jpg" alt="">
+        <!-- <img class="cover" src="../../assets/images/LaHaciendaFood.jpg" alt="" loading="lazy"> -->
+        <img class="cover" [defaultImage]="defaultImage1" [lazyLoad]="image1" />
       </div>
       <div class="text-box"> <img class="taco-icon" src="../../assets/icon/taco.png" alt="">
         <h2 class="fresh-text">The Authentic</h2>
@@ -47,7 +48,8 @@
   <div class="last-container">
     <!-- <img class="food-img" src="../../assets/images/lindsay-moe-WZzrQX5k2Ug-unsplash.jpg" alt="Cinque Terre" width="1000"
       height="300"> -->
-    <img class="order-img" src="../../assets/images/tomatoes.jpg" alt="">
+    <!-- <img loading="lazy" class="order-img" src="../../assets/images/tomatoes.jpg" alt=""> -->
+    <img class="order-img" [defaultImage]="defaultImage2" [lazyLoad]="image2" />
     <!-- <img src="../../assets/images/brickpattern.jpg" alt=""> -->
     <div class="last-bottomleft">
       <h2 class="order-text">Made To Order </h2>
@@ -60,6 +62,7 @@
       <button class="order-btn">Order Online</button>
     </div>
   </div>
+
 
   <div class="footer-container">
 
