@@ -312,11 +312,185 @@
     align-items: center;
     padding-top: 1rem;
   }
+
+
+  .bottomleft {
+    height: 200px;
+    width: 250px;
+  }
+
+  .clear-text{
+    height: 0px;
+    width: 0px;
+  }
+
+  .taco-icon {
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .fresh-text {
+    font-size: 1rem;
+  }
+
+  .info-text {
+    font-size: .7rem;
+    padding: 0 .8rem;
+  }
+
+  .bottom-container {
+    width: 100%;
+  }
+
+  .cover {
+    width: 250px;
+    height: 200px;
+  }
+
+  .cover-div {
+    height: 200px;
+  }
+
+  .text-box {
+    height: 200px;
+    width: 250px;
+  }
+
+  .last-container {
+    padding-bottom: 0rem;
+  }
+
+  .last-bottomleft {
+    height: 250px;
+    width: 550px;
+  }
+
+  .order-img {
+    width: 700px;
+    height: 400px;
+  }
+
+  .order-text {
+    font-size: 1.3rem;
+  }
+
+  .margin-bot {
+    margin-bottom: 1.5rem;
+  }
+
+  .order-info-text {
+    font-size: .8rem;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .order-btn {
+    background-color: #F9FCCC;
+    padding: .3rem 1.4rem;
+    color: red;
+  }
+
+  .order-btn:hover {
+    background-color: red;
+    color: #F9FCCC;
+    border: 1px solid #F9FCCC;
+  }
 }
 
 @media only screen and (max-width: 450px) {
 
 
+
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+
+  .container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomleft {
+    position: static;
+    height: 215px;
+    width: 100%;
+  }
+
+  .clear-text{
+    height: 200px;
+    width: 250px;
+  }
+
+  .taco-icon {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .fresh-text {
+    font-size: 1.2rem;
+  }
+
+  .info-text {
+    font-size: .8rem;
+    padding: .5rem 2rem;
+  }
+
+  .hacienda-img-container {
+    flex-direction: column;
+  }
+
+  .cover-div{
+    width: 100%;
+    height: 215px;
+  }
+
+  .cover {
+    width: 100%;
+    height: 215px;
+  }
+
+  .text-box {
+    height: 215px;
+    width: 100%;
+  }
+
+  .last-container {
+    width: 100%;
+    height: 450px;
+  }
+
+  .order-img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .last-bottomleft {
+    width: 325px;
+    height: 350px;
+  }
+
+
+  .footer-tab-header {
+    font-size: 1rem;
+  }
+
+  .footer-tab-sub {
+    font-size: .9rem;
+  }
 
 
 }
