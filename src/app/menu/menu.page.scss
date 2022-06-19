@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Quigley';
+  src: url('../../assets/Fonts/QUIGLEYW-webfont.ttf');
+}
+
+
+ion-content {
+  --background: white;
+}
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(181, 0, 0);
+}
+
+.header-div h2 {
+  font-family: 'Proxima-Black';
+  letter-spacing: 3px;
+  font-size: 5rem;
+}
+
+.menu-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn {
+  --background: black;
+  font-family: 'Proxima-Black';
+  --border-radius: 0px;
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  color: white;
+}

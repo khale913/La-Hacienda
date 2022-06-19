@@ -12,7 +12,8 @@ export class NavMenuPage implements OnInit {
 
   ngOnInit() {
     this.activePage = localStorage.getItem('curPage');
-    console.log(this.activePage)
+    console.log(this.activePage);
+    console.log('ahahh')
   }
 
   activeTab(page: any) {
