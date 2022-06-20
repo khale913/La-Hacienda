@@ -3,9 +3,15 @@
   src: url('../../assets/Fonts/QUIGLEYW-webfont.ttf');
 }
 
+@font-face {
+  font-family: 'Proxima-Sbold';
+  src: url('../../assets/Fonts/ProximaNova-Sbold.ttf')
+}
+
 
 ion-content {
   --background: white;
+  // --background: url('../../assets/images/brickpattern.jpg');
 }
 
 .header-div {
@@ -16,7 +22,7 @@ ion-content {
 }
 
 .header-div h2 {
-  font-family: 'Proxima-Black';
+  font-family: 'Proxima-Sbold';
   letter-spacing: 3px;
   font-size: 5rem;
 }
@@ -28,10 +34,10 @@ ion-content {
 }
 
 .nav-btn {
-  --background: black;
-  font-family: 'Proxima-Black';
-  --border-radius: 0px;
-  --padding-start: 1rem;
-  --padding-end: 1rem;
+  background: black;
+  font-family: 'Proxima-Sbold';
+  border-radius: 2px;
+  padding: .3rem 1rem;
+  margin: 0 .3rem;
   color: white;
 }
