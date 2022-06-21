@@ -172,6 +172,14 @@ export class MenuPage implements OnInit {
     },
   ];
 
+  chimichangasMenu: any = [
+    {
+      title: '2 CHILE VERDE',
+      description: 'Green chile sauce with pork. A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
+      price: '10.99',
+    },
+  ]
+
   activeTab: string = 'Appetizers & Salads';
   constructor() { }
 
