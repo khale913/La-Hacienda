@@ -9,6 +9,8 @@
   <div class="sec-div">
     <h2>{{activeTab}}</h2>
     <p *ngIf="activeTab === 'Cocktails'">SERVED COLD</p>
+    <p *ngIf="activeTab === 'Combination Plate'">SERVED WITH RICE & BEANS, WHOLE BEANS AVAILABLE UPON REQUEST. PICK ANY
+      2 (LIMITED TO 1 OF ANY ITEM)</p>
   </div>
 
   <div class="food-list-container" *ngIf="activeTab === 'Appetizers & Salads'">
@@ -40,6 +42,24 @@
           <h1 class="price">${{item.price}}</h1>
         </div>
         <p>{{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Combination Plate'">
+    <div class="food-item-div" *ngFor="let item of comboMenu">
+      <!-- <img src="../../assets/images/GreenSalad.jpg" alt=""> -->
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p>{{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
       </div>
     </div>
   </div>

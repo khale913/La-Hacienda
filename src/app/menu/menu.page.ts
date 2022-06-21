@@ -109,6 +109,69 @@ export class MenuPage implements OnInit {
     },
   ];
 
+  comboMenu: any = [
+    {
+      title: 'HARD SHELL TACO',
+      description: 'Chicken or ground beef',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'TOSTADA DE CARNITAS',
+      description: 'Shredded pork',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'CHIMICHANGA',
+      description: 'Chicken, ground beef, or chile verde',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'QUESADILLA DE MASA ',
+      description: 'Cheese, chicken, or ground beef',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'SMOTHERED BURRITO',
+      description: 'Green or red chile w/pork',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'TOSTADA',
+      description: 'Chicken, ground beef or beans',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'ENCHILADA',
+      description: 'Cheese, chicken, ground beef, or chile verde',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'SOFT SHELL TACO',
+      description: 'Chicken or ground beef',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'CHILE RELLENO',
+      description: 'Cheese',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+    {
+      title: 'TAMALES',
+      description: 'Chicken or pork',
+      price: '11.99',
+      addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
+    },
+  ];
+
   activeTab: string = 'Appetizers & Salads';
   constructor() { }
 
