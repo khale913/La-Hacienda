@@ -193,6 +193,41 @@ ion-content {
   border: 1.4px dashed red;
 }
 
+// footer
+.footer-container {
+  width: 100%;
+  background-color: rgb(181, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.footer-tab-header {
+  font-family: 'Proxima-Black';
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.footer-tab-sub {
+  font-family: 'ProximaNova-Reg';
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.footer-tab-sub:hover {
+  border-bottom: 1px solid white;
+}
+
+.cover-div {
+  height: 400px;
+}
 
 @media only screen and (max-width: 900px) {
   .links {
@@ -212,6 +247,19 @@ ion-content {
   .sec-div h2 {
     font-size: 2.5rem;
   }
+
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -229,6 +277,17 @@ ion-content {
   .food-list-container {
     margin: 0;
     padding: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
   }
 
 }

@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Quigley';
+  src: url('../../assets/Fonts/QUIGLEYW-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'Proxima-Sbold';
+  src: url('../../assets/Fonts/ProximaNova-Sbold.ttf')
+}
+
+@font-face {
+  font-family: 'Proxima-Reg';
+  src: url('../../assets/Fonts/ProximaNova-Reg.ttf')
+}
+@font-face {
+  font-family: 'Proxima-Thin';
+  src: url('../../assets/Fonts/ProximaNova-Thin.ttf')
+}
+
+@font-face {
+  font-family: 'Proxima-Black';
+  src: url('../../assets/Fonts/Proxima Nova Black.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ion-content {
+  --background: white;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottomleft {
+  position: absolute;
+  font-size: 18px;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.891);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.location-div {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+}
+
+.location-btn {
+  font-family: 'Proxima-Reg';
+  background-color: rgb(181, 0, 0);
+  color: white;
+  border: 2px solid black;
+  padding: .5rem 1rem;
+  margin-top: 3rem;
+}
+
+.location-btn:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.food-img {
+  width: 100%;
+  height: auto;
+  // opacity: 0.3;
+}
+
+.text {
+  color: rgb(181, 0, 0);
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.fresh-text {
+  font-family: 'Proxima-Black';
+  color: rgb(181, 0, 0);
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.info-text {
+  font-family: 'Proxima-Reg';
+  color: black;
+  font-size: 1rem;
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+.location-small {
+  visibility: hidden;
+  display: none;
+}
+
+// footer
+.footer-container {
+  width: 100%;
+  background-color: rgb(181, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.footer-tab-header {
+  font-family: 'Proxima-Black';
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.footer-tab-sub {
+  font-family: 'ProximaNova-Reg';
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.footer-tab-sub:hover {
+  border-bottom: 1px solid white;
+}
+
+.cover-div {
+  height: 400px;
+}
+
+  @media only screen and (max-width: 900px) {
+    .location-div {
+      margin: 1rem 1rem;
+      padding: .5rem 1rem;
+    }
+
+    .location-btn {
+      padding: .5rem 1rem;
+      margin-top: 1rem;
+    }
+
+    .fresh-text {
+      font-size: 1.4rem;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .info-text {
+      font-size: .9rem;
+      margin: 1rem 1.3rem;
+      text-align: center;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 625px) {
+    .bottomleft {
+      height: 200px;
+      color: black;
+    }
+
+    .location-div {
+      border: 1px solid black;
+      margin: 0rem 0rem;
+      padding: .5rem .7rem;
+    }
+
+    .location-btn {
+      font-size: .7rem;
+      padding: .3rem .8rem;
+      margin-top: .5rem;
+    }
+
+    .fresh-text {
+      font-size: 1.2rem;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .info-text {
+      font-size: .8rem;
+      margin: .5rem 1rem;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .bottomleft {
+      visibility: hidden;
+      display: none;
+      height: 200px;
+      color: black;
+    }
+
+    .location-small {
+      visibility:visible;
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // margin: 1rem 1rem;
+      padding: 2rem 3rem;
+      border: 0px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+    }
+
+  }
