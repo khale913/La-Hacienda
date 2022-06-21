@@ -8,36 +8,106 @@
   src: url('../../assets/Fonts/ProximaNova-Sbold.ttf')
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 ion-content {
   --background: white;
   // --background: url('../../assets/images/brickpattern.jpg');
 }
 
-.header-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(181, 0, 0);
-}
-
-.header-div h2 {
-  font-family: 'Proxima-Sbold';
-  letter-spacing: 3px;
-  font-size: 5rem;
-}
-
-.menu-nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-btn {
-  background: black;
-  font-family: 'Proxima-Sbold';
-  border-radius: 2px;
-  padding: .3rem 1rem;
-  margin: 0 .3rem;
+.test-btn {
+  font-family: 'Proxima-Black';
+  padding: .8rem 1rem;
+  background-color: transparent;
   color: white;
+  z-index: 999;
+  white-space: nowrap;
+}
+
+
+.navbara {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  position: sticky;
+  top:0;
+  left: 0;
+  white-space: nowrap;
+}
+
+.links {
+  background: rgb(181, 0, 0);
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+
+   height: 7px;
+
+   background: rgb(181, 0, 0);
+
+}
+
+::-webkit-scrollbar-thumb {
+
+   height: 5px;
+
+   background: #212121;
+
+}
+
+.active-btn {
+  // background-color: black;
+  color: black;
+}
+
+.sec-div {
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.sec-div h2 {
+  font-family: 'Proxima-Black';
+  font-size: 3rem;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .links {
+    font-size: 1.1rem;
+  }
+
+  .sec-div h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .links {
+    font-size: 1rem;
+  }
+
+  .sec-div h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+
+
+
 }

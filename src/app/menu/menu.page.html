@@ -1,15 +1,13 @@
 <ion-content>
-  <div class="header-div">
-    <h2>MENU</h2>
+
+  <div class="navbara">
+    <button *ngFor="let btn of menuTabs" class="links test-btn" [ngClass]="{ 'active-btn': activeTab === btn}"
+      (click)="setActiveTab(btn)">{{btn}}</button>
   </div>
 
-  <div class="menu-nav-container">
-    <button class="nav-btn">Appetizers & Salads</button>
-    <button class="nav-btn">Cocktails</button>
-    <button class="nav-btn">Appetizers & Salads</button>
-    <button class="nav-btn">Cocktails</button>
-    <button class="nav-btn">Appetizers & Salads</button>
-    <button class="nav-btn">Cocktails</button>
 
+  <div class="sec-div">
+    <h2>{{activeTab}}</h2>
   </div>
+
 </ion-content>
