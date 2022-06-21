@@ -16,7 +16,9 @@
 
 ion-content {
   --background: white;
-  // --background: url('../../assets/images/brickpattern.jpg');
+  --background: url('../../assets/images/brickpattern.jpg');
+  // filter: brightness(.8)
+
 }
 
 .test-btn {
