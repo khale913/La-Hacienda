@@ -1,8 +1,12 @@
 <ion-content>
 
-  <div class="navbara">
+  <div class="navbara small-screen">
     <button *ngFor="let btn of menuTabs" class="links test-btn" [ngClass]="{ 'active-btn': activeTab === btn}"
       (click)="setActiveTab(btn)">{{btn}}</button>
+  </div>
+  <div class="test-bar large-screen">
+    <div class="test-btn" [ngClass]="{ 'active-btn': activeTab === item}" *ngFor="let item of menuTabs"
+      (click)="setActiveTab(item)">{{item}}</div>
   </div>
 
 
@@ -11,6 +15,19 @@
     <p *ngIf="activeTab === 'Cocktails'">SERVED COLD</p>
     <p *ngIf="activeTab === 'Combination Plate'">SERVED WITH RICE & BEANS, WHOLE BEANS AVAILABLE UPON REQUEST. PICK ANY
       2 (LIMITED TO 1 OF ANY ITEM)</p>
+    <div *ngIf="activeTab === 'Burritos'">
+      <p>Smother with red or green chile $1.50</p>
+      <p>Smothered and cheese $2.50</p>
+      <p>Enchilada style $1.75</p>
+      <p>Scoop of guacamole $1.25</p>
+      <p>Sour cream $0.75</p>
+    </div>
+
+    <div *ngIf="activeTab === 'Tamales'">
+      <p>Smother with red or green chile $1.50</p>
+      <p>Smothered and cheese $2.50</p>
+      <p>Enchilada style $1.75</p>
+    </div>
   </div>
 
   <div class="food-list-container" *ngIf="activeTab === 'Appetizers & Salads'">
@@ -24,7 +41,7 @@
           </h2>
           <h1 class="price">${{item.price}}</h1>
         </div>
-        <p>{{item.description}}</p>
+        <p class="food-item-descrip">{{item.description}}</p>
         <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
       </div>
     </div>
@@ -32,7 +49,6 @@
 
   <div class="food-list-container" *ngIf="activeTab === 'Botanas Mexicanas'">
     <div class="food-item-div" *ngFor="let item of botMenu">
-      <!-- <img src="../../assets/images/GreenSalad.jpg" alt=""> -->
       <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
       <div class="food-item-text">
         <div class="price-div">
@@ -41,15 +57,14 @@
           </h2>
           <h1 class="price">${{item.price}}</h1>
         </div>
-        <p>{{item.description}}</p>
+        <p class="food-item-descrip">{{item.description}}</p>
         <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
       </div>
     </div>
   </div>
 
-  <div class="food-list-container" *ngIf="activeTab === 'Combination Plate'">
-    <div class="food-item-div" *ngFor="let item of comboMenu">
-      <!-- <img src="../../assets/images/GreenSalad.jpg" alt=""> -->
+  <div class="food-list-container" *ngIf="activeTab === 'Cocktails'">
+    <div class="food-item-div" *ngFor="let item of cocktailMenu">
       <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
       <div class="food-item-text">
         <div class="price-div">
@@ -58,7 +73,262 @@
           </h2>
           <h1 class="price">${{item.price}}</h1>
         </div>
-        <p>{{item.description}}</p>
+        <p class="food-item-descrip">{{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="food-list-container" *ngIf="activeTab === 'Combination Plate'">
+    <div class="food-item-div" *ngFor="let item of comboMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip">{{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Chimichangas'">
+    <div class="food-item-div" *ngFor="let item of chimichangasMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Almuerzos - Breakfast'">
+    <div class="food-item-div" *ngFor="let item of almuerzoMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Burritos'">
+    <div class="food-item-div" *ngFor="let item of burritoMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Enchiladas'">
+    <div class="food-item-div" *ngFor="let item of enchiladaMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Quesadillas'">
+    <div class="food-item-div" *ngFor="let item of quesadillaMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Tortas'">
+    <div class="food-item-div" *ngFor="let item of tortasMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Quesadillas De Masa'">
+    <div class="food-item-div" *ngFor="let item of quesadillaDeMasaMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Mariscos - Seafood'">
+    <div class="food-item-div" *ngFor="let item of mariscoMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Meat Plates'">
+    <div class="food-item-div" *ngFor="let item of meatMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Fajitas'">
+    <div class="food-item-div" *ngFor="let item of fajitaMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Chile Platters'">
+    <div class="food-item-div" *ngFor="let item of chileMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Tamales'">
+    <div class="food-item-div" *ngFor="let item of tamaleMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Fluatas'">
+    <div class="food-item-div" *ngFor="let item of fluataMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === 'Tacos'">
+    <div class="food-item-div" *ngFor="let item of tacoMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
+        <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="food-list-container" *ngIf="activeTab === '4 Tacos Mexicanos'">
+    <div class="food-item-div" *ngFor="let item of fourTacoMenu">
+      <img [defaultImage]="item.defaultImage" [lazyLoad]="item.image" />
+      <div class="food-item-text">
+        <div class="price-div">
+          <h2>{{item.title}} <ion-icon *ngIf="item.hot" name="flame-outline">
+            </ion-icon>
+          </h2>
+          <h1 class="price">${{item.price}}</h1>
+        </div>
+        <p class="food-item-descrip"> {{item.description}}</p>
         <p class="addition-text" *ngIf="item.addition">{{item.addition}}</p>
       </div>
     </div>

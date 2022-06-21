@@ -8,15 +8,44 @@
   src: url('../../assets/Fonts/ProximaNova-Sbold.ttf')
 }
 
+@font-face {
+  font-family: 'Proxima-Slight';
+  src: url('../../assets/Fonts/ProximaNova-Reg.ttf')
+}
+@font-face {
+  font-family: 'Proxima-Light';
+  src: url('../../assets/Fonts/ProximaNova-Thin.ttf')
+}
+
+@font-face {
+  font-family: 'Proxima-Bold';
+  src: url('../../assets/Fonts/Proxima Nova Black.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.test-bar {
+  display: flex;
+  background-color: rgb(181, 0, 0);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  // position: fixed;
+}
+
+.test-btn {
+  cursor: pointer;
+}
+
+
 ion-content {
-  --background: white;
-  --background: url('../../assets/images/brickpattern.jpg');
+  --background: rgb(228, 224, 220);
+  // --background: url('../../assets/images/brickpattern.jpg');
   // filter: brightness(.8)
 
 }
@@ -51,7 +80,8 @@ ion-content {
 
 ::-webkit-scrollbar {
 
-   height: 7px;
+   height: 3px;
+
 
    background: rgb(181, 0, 0);
 
@@ -70,6 +100,11 @@ ion-content {
   color: black;
 }
 
+.small-screen {
+  visibility: hidden;
+  display: none;
+}
+
 .sec-div {
   display: flex;
   color: black;
@@ -82,16 +117,17 @@ ion-content {
 }
 
 .sec-div h2 {
-  font-family: 'Proxima-Black';
-  font-size: 3rem;
-  border-bottom: 2px solid black;
-
+  color: black;
+  // font-family: 'Proxima-Black';
+  font-family: 'Quigley';
+  font-size: 4rem;
+  // border-bottom: 2px solid black;
 }
 
 .food-list-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 5rem;
 }
@@ -122,32 +158,39 @@ ion-content {
   align-items: flex-start;
   justify-content: space-between;
   align-items: flex-start;
+  padding-bottom: .5rem;
 }
 
 .food-item-text h2{
-  font-family: 'Proxima-Sbold';
+  // font-family: 'Proxima-Sbold';
+  font-family: 'Proxima-Slight';
   color:rgb(181, 0, 0);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   max-width: 200px;
 }
-.food-item-text p{
-  font-family: 'ProximaNova-Reg';
+.food-item-descrip{
+  font-family: 'Proxima-Sbold';
   font-size: .8rem;
 }
 
 .price {
-  font-family: 'Proxima-Sbold';
+  font-family: 'Proxima-Bold';
   font-size: 1rem;
-  background-color: black;
-  color: white;
+  // background-color: black;
+  // color: white;
+  color: black;
   border-radius: 2px;
   padding: 2px 5px;
 }
 
 .addition-text {
+  font-family: 'Proxima-Slight';
+  width: fit-content;
+  font-size: .8rem;
   border-radius: 5px;
-  color: red;
-  border: 1px dotted red;
+  color: black;
+  padding: 5px;
+  border: 1.4px dashed red;
 }
 
 
@@ -167,13 +210,25 @@ ion-content {
   }
 
   .sec-div h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
 
+  .small-screen {
+    visibility: visible;
+    display: block;
+  }
 
+  .large-screen {
+    visibility: hidden;
+    display: none;
+  }
 
+  .food-list-container {
+    margin: 0;
+    padding: 0;
+  }
 
 }
