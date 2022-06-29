@@ -172,66 +172,64 @@ export class MenuPage implements OnInit {
     },
   ];
 
-  //  need 2 do
   chimichangasMenu: any = [
     {
       title: '2 CHILE VERDE',
       description: 'Green chile sauce with pork. A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '10.99',
+      price: '11.99',
       addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
     },
     {
       title: '2 CHILE COLORADO',
       description: 'Red Chile sauce with pork. A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '10.99',
+      price: '11.99',
       addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
     },
     {
       title: '2 GROUND BEEF',
       description: 'A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '10.99',
+      price: '11.99',
       addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
     },
     {
       title: '2 CHICKEN',
       description: 'A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '10.99',
+      price: '11.99',
       addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
     },
     {
       title: '2 SHREDDED BEEF',
       description: 'A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '11.99',
+      price: '12.99',
       addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
     },
   ];
 
-  // need 2 do
   almuerzoMenu: any = [
     {
       title: 'MENUDO',
       description: 'A mexican stew with beef tripe and hominy (no rice & beans)',
-      price: '8.49',
+      price: '9.49',
     },
     {
       title: 'HUEVOS RANCHEROS',
       description: '2 eggs with your choice of spicy ranchero salsa or chile verde with pork',
-      price: '7.99',
+      price: '8.99',
     },
     {
       title: 'HEUVOS CON JAMON',
       description: '2 eggs scrambled with diced ham',
-      price: '7.99',
+      price: '8.99',
     },
     {
       title: 'HUEVOS CON CHORIZO',
       description: 'Mexican sausage scrambled with eggs',
-      price: '7.99',
+      price: '8.99',
     },
     {
       title: 'CHILAQUILES',
       description: 'Tortilla chips and eggs scrambled with pico de gallo, salsa and topped with fresh mexican cheese',
-      price: '8.49',
+      price: '9.49',
     },
   ];
 
@@ -571,69 +569,72 @@ export class MenuPage implements OnInit {
     },
   ];
 
-  // NEED UPDATE
   fluataMenu: any = [
     {
       title: 'GROUND BEEF OR CHICKEN',
       description: 'Served with rice, beans, guacamole, & sour cream',
-      price: '8.49',
+      price: '9.99',
     },
     {
       title: 'SHREDDED BEEF',
       description: 'Served with rice, beans, guacamole, & sour cream',
-      price: '8.49',
+      price: '9.99',
     },
     {
       title: 'CARNITAS',
       description: 'Shredded pork. Served with rice, beans, guacamole, & sour cream',
-      price: '8.49',
+      price: '9.99',
     },
   ];
-  // NEED UPDATE
+
   tacoMenu: any = [
     {
       title: '2 HARD SHELL TACOS',
       description: 'Chicken or ground beef (shredded beef add $1). Served with rice & beans',
-      price: '7.99',
+      price: '8.49',
     },
     {
       title: 'SOFT SHELL TACO',
       description: 'Homemade flour tortillas wit hchicken or ground beef (Shredded beef or Carnitas add $1). Served with rice & beans',
-      price: '8.49',
+      price: '8.99',
     },
   ];
 
-  // NEED UPDATE
   fourTacoMenu: any = [
     {
       title: 'POLLO ASADO',
       description: 'Grilled chicken. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '7.99',
+      price: '8.49',
     },
     {
       title: 'ADOBADA',
       description: 'Marinated pork. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '7.99',
+      price: '8.49',
     },
     {
       title: 'ASADA',
       description: 'Steak. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '7.99',
+      price: '8.49',
+    },
+    {
+      title: 'CARNITAS',
+      description: 'Shredded pork. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
+      price: '8.49',
     },
     {
       title: 'LENGUA',
       description: 'Beef tongue (Orders of 4 only). Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.49',
+      price: '8.99',
     },
     {
       title: 'CAMARON',
       description: 'Shrimp. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.99',
+      price: '9.99',
     },
     {
       title: 'PESCADO',
       description: 'Fish (Orders of 4 only). Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.99',
+      price: '9.99',
     },
 
   ];
