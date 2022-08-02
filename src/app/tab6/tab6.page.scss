@@ -18,8 +18,8 @@
   // bottom: 4px;
   right: 50%;
   font-size: 18px;
-  height: 400px;
-  width: 450px;
+  height: 500px;
+  width: 550px;
   background-color: white;
   color: black;
   display: flex;
@@ -31,8 +31,8 @@
 .clear-text{
   position: absolute;
   background-color: transparent;
-  height: 400px;
-  width: 450px;
+  height: 500px;
+  width: 550px;
   left: 50%;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .taco-icon {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   text-align: center;
   margin-top: 70px;
   margin-bottom: 20px;
@@ -58,14 +58,14 @@
 
 .fresh-text {
   color: rgb(181, 0, 0);
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;
 }
 
 .info-text {
   color: rgb(181, 0, 0);
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -78,13 +78,13 @@
 
 .cover {
   object-fit: cover;
-  width: 450px;
-  height: 400px;
+  height: 500px;
+  width: 550px;
 }
 
 .text-box {
-  height: 400px;
-  width: 450px;
+  height: 500px;
+  width: 550px;
   background-color: #F9FCCC;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@
 .hacienda-img-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -117,8 +117,8 @@
   // bottom: 4px;
   // right: 5%;
   font-size: 18px;
-  height: 350px;
-  width: 750px;
+  height: 375px;
+  width: 800px;
   background-color: red;
   color: black;
   display: flex;
@@ -130,14 +130,14 @@
 
 .order-img {
   object-fit: cover;
-  width: 900px;
+  width: 1100px;
   height: 500px;
   filter: brightness(.8);
 }
 
 .order-text {
   color: #F9FCCC;
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -147,7 +147,7 @@
 
 .order-info-text {
   color: #F9FCCC;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 0 6rem;
   margin-bottom: 2rem;
@@ -206,33 +206,33 @@
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1118px) {
 
 
 .bottomleft {
-  height: 300px;
-  width: 350px;
+  height: 350px;
+  width: 400px;
 }
 
 .clear-text{
-  height: 300px;
-  width: 350px;
+  height: 350px;
+  width: 400px;
 }
 
 .taco-icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 10px;
 }
 
 .fresh-text {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .info-text {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .bottom-container {
@@ -240,8 +240,8 @@
 }
 
 .cover {
-  width: 350px;
-  height: 300px;
+  height: 350px;
+  width: 400px;
 }
 
 .cover-div {
@@ -249,8 +249,8 @@
 }
 
 .text-box {
-  height: 300px;
-  width: 350px;
+  height: 350px;
+  width: 400px;
 }
 
 .last-container {
@@ -258,17 +258,17 @@
 }
 
 .last-bottomleft {
-  height: 250px;
-  width: 550px;
+  height: 275px;
+  width: 600px;
 }
 
 .order-img {
-  width: 700px;
+  width: 800px;
   height: 400px;
 }
 
 .order-text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .margin-bot {
@@ -276,7 +276,7 @@
 }
 
 .order-info-text {
-  font-size: .8rem;
+  font-size: .9rem;
   padding: 0 4rem;
   margin-bottom: 1rem;
 }
@@ -301,7 +301,8 @@
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
+
 
   .footer-container {
     flex-direction: column;
@@ -365,11 +366,11 @@
 
   .last-bottomleft {
     height: 250px;
-    width: 550px;
+    width: 450px;
   }
 
   .order-img {
-    width: 700px;
+    width: 500px;
     height: 400px;
   }
 
