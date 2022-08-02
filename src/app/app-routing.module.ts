@@ -8,23 +8,23 @@ const routes: Routes = [
   },
   {
     path: 'tab4',
-    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+    loadChildren: () => import('./tab4/tab4.module').then(m => m.Tab4PageModule)
   },
   {
     path: 'tab5',
-    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
+    loadChildren: () => import('./tab5/tab5.module').then(m => m.Tab5PageModule)
   },
   {
     path: 'tab6',
-    loadChildren: () => import('./tab6/tab6.module').then( m => m.Tab6PageModule)
+    loadChildren: () => import('./tab6/tab6.module').then(m => m.Tab6PageModule)
   },
   {
     path: 'nav-menu',
-    loadChildren: () => import('./nav-menu/nav-menu.module').then( m => m.NavMenuPageModule)
+    loadChildren: () => import('./nav-menu/nav-menu.module').then(m => m.NavMenuPageModule)
   },
   {
     path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+    loadChildren: () => import('./menu/menu.module').then(m => m.MenuPageModule)
   }
 ];
 @NgModule({
@@ -33,4 +33,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
