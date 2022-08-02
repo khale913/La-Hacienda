@@ -37,8 +37,8 @@ section {
   // font-family: 'Proxima-Black';
   font-family: 'Quigley';
   font-weight: 900;
-  line-height: 6rem;
-  font-size: 8rem;
+  line-height: 7rem;
+  font-size: 10rem;
   letter-spacing: 1px;
   color: white;
   white-space: nowrap;
@@ -47,11 +47,13 @@ section {
 .img-under_text {
   font-family: 'ProximaNova-Reg';
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   white-space: nowrap;
   margin-bottom: 1rem;
   letter-spacing: .3rem;
+  margin-top: 1rem;
 }
+
 
 .btn-container {
   align-items: center;
@@ -62,13 +64,13 @@ section {
 
 .section-btn {
   font-family: 'ProximaNova-Reg';
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 200;
   background-color: transparent;
   color: white;
   border: 1.5px solid white;
   border-radius: 50px;
-  padding: .5rem 2rem;
+  padding: .8rem 2.5rem;
   // margin-right: 1rem;
   // margin-left: 1rem;
   max-width: 9em;
@@ -77,6 +79,7 @@ section {
 }
 
 .section-btn:hover {
+  transition: .5s;
   background-color: rgb(181, 0, 0);
   color: white;
 }
@@ -101,14 +104,15 @@ section {
 
 .footer-tab-header {
   font-family: 'Proxima-Black';
-  font-size: 1.2rem;
-  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .footer-tab-sub {
   font-family: 'ProximaNova-Reg';
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: .5rem;
+  cursor: pointer;
 }
 
 .footer-tab-sub:hover {
@@ -125,6 +129,20 @@ section {
   .img-under_text {
     font-size: 1.5rem;
     letter-spacing: .7rem;
+  }
+
+  .section-btn {
+    font-family: 'ProximaNova-Reg';
+    font-size: 1.5rem;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    padding: .7rem 2rem;
+    // margin-right: 1rem;
+    // margin-left: 1rem;
+    max-width: 9em;
+    white-space: nowrap;
+    text-align: center;
   }
 }
 

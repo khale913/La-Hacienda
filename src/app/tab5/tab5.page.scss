@@ -1,0 +1,116 @@
+* {
+  // margin: 0;
+  // padding: 0;
+  box-sizing: border-box;
+}
+
+ion-content {
+  // --background: white;
+}
+
+.header-img {
+  background-color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.309)),  url('../../assets/images/Enchiladas.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  // filter: brightness(.7);
+  width: 100%;
+  height: 60%;
+}
+
+.header-title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Proxima-Black';
+  font-size: 5rem;
+}
+
+
+// footer
+.footer-container {
+  width: 100%;
+  // height: 100%;
+  background-color: rgb(181, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.footer-tab-header {
+  font-family: 'Proxima-Black';
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.footer-tab-sub {
+  font-family: 'ProximaNova-Reg';
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.footer-tab-sub:hover {
+  border-bottom: 1px solid white;
+}
+
+.cover-div {
+  height: 400px;
+}
+
+@media only screen and (max-width: 1200px) {
+// footer
+.footer-container {
+  width: 100%;
+  height: auto;
+  background-color: rgb(181, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .fresh-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+    }
+
+}
