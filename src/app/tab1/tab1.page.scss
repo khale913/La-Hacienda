@@ -35,10 +35,10 @@ section {
   // font-family: 'Satisfy', cursive;
   // font-family: 'Leckerli One', cursive;
   // font-family: 'Proxima-Black';
-  font-family: 'Quigley';
+  font-family: "Quigley";
   font-weight: 900;
-  line-height: 7rem;
-  font-size: 10rem;
+  line-height: 9rem;
+  font-size: 14rem;
   letter-spacing: 1px;
   color: white;
   white-space: nowrap;
@@ -122,12 +122,12 @@ section {
 @media only screen and (max-width: 900px) {
   .img-text {
     font-weight: 900;
-    line-height: 5rem;
-    font-size: 7rem;
+    line-height: 9rem;
+    font-size: 12rem;
   }
 
   .img-under_text {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     letter-spacing: .7rem;
   }
 
@@ -155,12 +155,13 @@ section {
 
   .img-text {
     font-weight: 900;
-    line-height: 4rem;
-    font-size: 7rem;
+    line-height: 6rem;
+    font-size: 9rem;
     margin-bottom: .5rem;
   }
 
   .img-under_text {
+    font-size: 2rem;
     letter-spacing: .5rem;
   }
 
@@ -185,12 +186,16 @@ section {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
 
   .img-text {
     font-weight: 900;
     line-height: 4.5rem;
-    font-size: 7rem;
+    font-size: 7.5rem;
+  }
+
+  .img-under_text {
+    font-size: 1.7rem;
   }
 
   header img {
