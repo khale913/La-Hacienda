@@ -255,19 +255,19 @@ ion-content {
     }
 
     .fresh-text {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       text-align: center;
       letter-spacing: 1px;
     }
 
     .info-text {
-      font-size: .8rem;
+      font-size: 1rem;
       margin: .5rem 1rem;
       text-align: center;
     }
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 550px) {
     .bottomleft {
       visibility: hidden;
       display: none;
