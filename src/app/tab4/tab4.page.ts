@@ -6,11 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab4.page.scss'],
 })
 export class Tab4Page implements OnInit {
-
+  fileNameResume: any;
+  fileNameCover: any;
   constructor() { }
 
   ngOnInit() {
-    console.log('dsl;k')
+  }
+
+  onFileSelected(file, type) {
+    console.log(file.target.files[0].name);
+
+    if (type === 'resume') {
+      this.fileNameResume = file.target.files[0].name;
+    }
+
+    if (type === 'cover') {
+      this.fileNameCover = file.target.files[0].name;
+    }
+
   }
 
 }

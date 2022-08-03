@@ -9,6 +9,61 @@
     <h2 class="header-title">CAREERS</h2>
   </div>
 
+  <div class="contact-container">
+    <div class="contact-text">
+      <div class="head-text">
+        <h2>La Hacienda Mexican Restaurant Careers</h2>
+        <h3>Come Join Our Team!</h3>
+      </div>
+      <p class="head-text">At La Hacienda... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil officia
+        minus adipisci eum porro dolore quis nulla debitis molestias odio vitae laudantium nemo, dolor vel dignissimos
+        error fugiat. Ad, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero adipisci nihil voluptates
+        itaque ullam a, quia ab ratione praesentium temporibus architecto, sit, non omnis quod incidunt eligendi iusto.
+        Architecto, ut.</p>
+    </div>
+
+    <div class="decor-line"></div>
+
+    <div class="form-container">
+      <form action="/action_page.php">
+        <input type="text" id="fname" name="name" placeholder="Name*" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone*">
+        <input type="text" id="email" name="email" placeholder="Email*" required>
+        <input type="text" id="address" name="address" placeholder="Address*" required>
+
+        <select id="position" name="position" required>
+          <option value="">Select Position</option>
+          <option value="australia">Server</option>
+          <option value="canada">Kitchen</option>
+        </select>
+        <!-- <label for="country">Select Location</label> -->
+        <select id="location" name="location" required>
+          <option value="">Select Location</option>
+          <option value="South Jordan">South Jordan</option>
+          <option value="Salt Lake City">Salt Lake City</option>
+          <option value="Draper">Draper</option>
+        </select>
+
+
+        <textarea id="subject" name="subject" placeholder="Enter your availability" style="height:200px"
+          required></textarea>
+        <textarea id="subject" name="subject" placeholder="Enter the name and phone number of two references"
+          style="height:200px" required></textarea>
+        <div class="resume-flex">
+          <label for="myfile">Resume: </label>
+          <input type="file" id="myfile" name="myfile" (change)="onFileSelected($event, 'resume')">
+          <h2 style="color: black; font-size: .9rem;">{{fileNameResume}}</h2>
+        </div>
+        <div class="resume-flex">
+          <label for="mycover">Cover Letter: </label>
+          <input type="file" id="mycover" name="mycover" (change)="onFileSelected($event, 'cover')">
+          <h2 style="color: black; font-size: .9rem;">{{fileNameCover}}</h2>
+        </div>
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </div>
 
 
 
