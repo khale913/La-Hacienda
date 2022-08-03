@@ -36,26 +36,27 @@ ion-content {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  padding: 5rem 9rem 5rem 8rem;
 }
 
 .contact-text {
   display: flex;
   flex-direction: column;
   width: 800px;
-  margin: 0;
+  margin: 0 2rem 0 0;
+  flex: 1;
+  cursor: default;
 }
 
-
-
 .contact-text h2 {
-  font-family: 'ProximaNova-Reg';
+  font-family: 'Proxima-Black';
   font-weight: 900;
   color: rgb(181, 0, 0);
   font-size: 2.7rem;
   margin: 0;
 }
 .contact-text h3 {
-  font-family: 'ProximaNova-Reg';
+  font-family: 'Proxima-Black';
   font-weight: 900;
   color: rgb(181, 0, 0);
   font-size: 2.2rem;
@@ -72,15 +73,124 @@ ion-content {
   margin-bottom: 1rem;
 }
 
+.locations {
+  color: rgb(181, 0, 0);
+  border-bottom: 1px dashed black;
+}
 
+.locations:hover {
+  cursor: pointer;
+}
+
+.phone {
+  font-family: Proxima-Black;
+  color: rgb(181, 0, 0);
+  font-weight: 600;
+  text-decoration: none;
+}
 
 .cover-div {
   height: 400px;
 }
 
-@media only screen and (max-width: 1200px) {
-// footer
+label {
+  color: black;
+}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 0px solid #ccc;
+  background-color: rgb(221, 221, 221);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black;
+}
+
+
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 0px solid #ccc;
+  background-color: rgb(221, 221, 221);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black;
+}
+
+input[type=submit] {
+  font-family: 'Proxima-Black';
+  background-color: rgb(181, 0, 0);
+  color: white;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(255, 29, 29);
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: white;
+  // padding: 20px;
+  flex: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+.header-title {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+// footer
+.contact-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem 3rem 3rem 2.5rem;
+}
+
+.contact-text {
+display: flex;
+flex-direction: column;
+width: 800px;
+margin: 0 2rem 0 0;
+flex: 1;
+cursor: default;
+}
+
+.contact-text h2 {
+font-family: 'Proxima-Black';
+font-weight: 900;
+color: rgb(181, 0, 0);
+font-size: 2rem;
+margin: 0;
+}
+.contact-text h3 {
+font-family: 'Proxima-Black';
+font-weight: 900;
+color: rgb(181, 0, 0);
+font-size: 1.9rem;
+margin: 0;
+}
+.contact-text p {
+font-family: 'ProximaNova-Reg';
+color: black;
+font-size: 1.1rem;
+margin-top: 0;
+}
 
 }
 
@@ -90,11 +200,57 @@ ion-content {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+  .contact-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 3rem 3rem 2.5rem;
+  }
 
+  .contact-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 2rem 0 0;
+  flex: 1;
+  cursor: default;
+  }
+
+  .decor-line {
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .contact-text h2 {
+  font-family: 'Proxima-Black';
+  font-weight: 900;
+  color: rgb(181, 0, 0);
+  font-size: 2.2rem;
+  margin: 0;
+  }
+  .contact-text h3 {
+  font-family: 'Proxima-Black';
+  font-weight: 900;
+  color: rgb(181, 0, 0);
+  font-size: 1.9rem;
+  margin: 0;
+  }
+  .contact-text p {
+  font-family: 'ProximaNova-Reg';
+  color: black;
+  font-size: 1.1rem;
+  margin-top: 0;
+  }
 }
 
 
 @media only screen and (max-width: 450px) {
-
+  .header-title{
+    font-size: 3rem;
+  }
 }
