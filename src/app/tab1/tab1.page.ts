@@ -15,5 +15,8 @@ export class Tab1Page {
     this.router.navigate(['/tabs/menu']);
   }
 
+  navLocation() {
+    this.router.navigate(['/tabs/tab3']);
+  }
 
 }
