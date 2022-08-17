@@ -40,7 +40,7 @@ export class TabsPage {
     this.activePage = page;
 
     if (this.activePage === '3') {
-      this.router.navigate(['/tabs/tab3'])
+      this.router.navigate(['/tabs/tab3']);
     }
   }
 
