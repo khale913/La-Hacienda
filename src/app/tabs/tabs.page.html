@@ -1,8 +1,11 @@
 <ion-tabs>
 
 
-
+  <div class="full-screen">
+    <h2 (click)="activeTab('3')" tab="tab3">CLICK HERE TO ORDER ONLINE NOW</h2>
+  </div>
   <ion-tab-bar slot="top">
+
     <img class="brick-pattern" src="../../assets/images/brickpattern.jpg" alt="">
 
     <div class="title-div" (click)="navigateHome()">
@@ -20,6 +23,12 @@
 
 
     <div class="nav-tabs">
+      <ion-tab-button (click)="activeTab('1')" class="nav-btn" tab="tab1">
+        <!-- <ion-icon name="triangle"></ion-icon> -->
+        <ion-label [ngClass]="{'active-label': activePage === '1'}" class="nav-label">
+          HOME</ion-label>
+      </ion-tab-button>
+
       <ion-tab-button (click)="activeTab('6')" class="nav-btn" tab="tab6">
         <!-- <ion-icon name="triangle"></ion-icon> -->
         <ion-label [ngClass]="{'active-label': activePage === '6'}" class="nav-label">

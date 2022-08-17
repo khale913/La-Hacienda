@@ -38,6 +38,10 @@ export class TabsPage {
     // this.storage.setString('curTab', page);
     localStorage.setItem('curPage', page);
     this.activePage = page;
+
+    if (this.activePage === '3') {
+      this.router.navigate(['/tabs/tab3'])
+    }
   }
 
   navigatePage(page: any) {

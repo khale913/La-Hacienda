@@ -1,12 +1,7 @@
 <ion-content [fullscreen]="true">
 
-  <header>
-    <!-- <img src="../../assets/images/hybrid-storytellers-2M9-LTrpxJw-unsplash.jpg" alt="Five developers at work."> -->
-    <!-- <img src="assets/images/homepagefood.jpg" alt=""> -->
-    <!-- <img src="assets/images/hopepagefood2.jpg" alt=""> -->
+  <!-- <header>
     <img src="../../assets/images/facebookhomeimg.jpeg" alt="">
-    <!-- <img src="../../assets/images/pexels-chitokan-2087748.jpg" alt=""> -->
-    <!-- <img src="../../assets/images/pexels-sabel-blanco-3073970.jpg" alt=""> -->
     <section class='hero-header-text'>
       <h1 class="img-text">La</h1>
       <h1 class="img-text spacing-bot"> Hacienda</h1>
@@ -16,7 +11,29 @@
         <button class="section-btn" (click)="navLocation()">Order Online</button>
       </div>
     </section>
-  </header>
+  </header> -->
+
+  <div class="mall-slide">
+    <div class="slid-content">
+      <div class="mall-show-slide fade" *ngFor="let item of Imagedata;">
+        <img src="{{item}}" style="width:100%">
+        <div class="section">
+          <h1 class="img-text">La</h1>
+          <h1 class="img-text spacing-bot"> Hacienda</h1>
+          <h1 class="img-under_text">MEXICAN RESTAURANT</h1>
+          <div class="btn-container">
+            <button (click)="navMenu()" class="section-btn">View Menu</button>
+            <button class="section-btn" (click)="navLocation()">Order Online</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mall-carousel-ind">
+        <ul>
+          <li *ngFor="let item of Imagedata; let i = index;" [class.mall-this]="startIndex - 1 === i"></li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
 
   <app-footer></app-footer>
 

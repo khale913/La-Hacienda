@@ -4,8 +4,28 @@
   box-sizing: border-box;
 }
 
+.full-screen {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 35px;
+  background-color: rgb(204,1,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen h2 {
+  font-family: 'ProximaNova-Reg';
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 
 ion-tab-bar{
+  margin-top: 35px;
   position: relative;
   // background-color: #ECEBE6;
   // background-color: white;
@@ -166,7 +186,7 @@ ion-button {
   // border-bottom: 2px solid black;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1040px) {
 
   .hacienda-img {
     max-width: 250px;
@@ -186,7 +206,7 @@ ion-button {
 
   .title-div {
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
   }
 
   .title {
@@ -194,7 +214,7 @@ ion-button {
   }
 
   .under-title {
-    font-size: .8rem;
+    font-size: 1rem;
     letter-spacing: 1px;
   }
 
