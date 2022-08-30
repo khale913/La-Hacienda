@@ -49,8 +49,12 @@ ion-content {
   background-color: rgba(255, 255, 255, 0.891);
   color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+}
+
+.la-hacienda-split {
+  display: flex
 }
 
 .location-div {
@@ -70,6 +74,8 @@ ion-content {
   border: 2px solid black;
   padding: .5rem 1rem;
   margin-top: 3rem;
+  width: min-content;
+  white-space: nowrap;
 }
 
 .location-btn:hover {
@@ -149,6 +155,35 @@ ion-content {
   height: 400px;
 }
 
+.hacienda-grill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grill-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  padding: 1rem 7rem;
+  margin: 1rem;
+}
+
+.grill-text h2 {
+  font-family: 'Proxima-Black';
+}
+
+.hacienda-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hacienda-img img{
+  object-fit: cover;
+  max-width: 25rem;
+}
+
 @media only screen and (max-width: 1200px) {
 // footer
 .footer-container {
@@ -195,7 +230,6 @@ ion-content {
 
     .bottomleft {
       height: 300px;
-
     }
 
     .location-div {
@@ -298,4 +332,27 @@ ion-content {
       padding-top: 1rem;
     }
 
+    .hacienda-grill-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .grill-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid black;
+      padding: 1rem 7rem;
+      margin: 0rem;
+    }
+
+    .hacienda-img img{
+      object-fit: cover;
+      max-width: 18rem;
+    }
+
+  }
+
+  .no-margin {
+    margin: 0;
   }

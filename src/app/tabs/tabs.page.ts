@@ -10,7 +10,7 @@ import { NavMenuPage } from '../nav-menu/nav-menu.page';
 })
 export class TabsPage {
 
-  activePage: any = '';
+  activePage: any = '1';
 
   constructor(public router: Router, public modalCtrl: ModalController) { }
 
