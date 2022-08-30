@@ -12,46 +12,46 @@ export class MenuPage implements OnInit {
     {
       title: 'CHILE VERDE, CHEESE FRIES',
       description: 'French fries smothers with green chile, pork and cheddar cheese',
-      price: '8.99',
+      price: '10.99',
     },
     {
 
       title: 'SUPER NACHOS',
       description: 'Cheese, chicken, or beef (Steak add $1). Melted cheese, beans, tomatoes, onions, cilantro, sour cream, guacamole, & jalapenos',
-      price: '9.99',
+      price: '11.99',
     },
     {
       title: 'POLLO ASADO SALAD',
       description: 'Grilled chicken',
-      price: '11.99',
+      price: '12.99',
     },
     {
 
       title: 'TACO SALAD',
       description: 'Chicken, beef, or carnitas (shredded pork)',
-      price: '11.99',
+      price: '12.99',
     },
     {
 
       title: 'CAMARON SALAD',
       description: 'Shrimp salad',
-      price: '12.99',
+      price: '14.99',
     },
     {
 
       title: 'AGUACATE SALAD',
       description: 'Avacado salad',
-      price: '11.99',
+      price: '12.49',
     },
     {
       title: 'CHICKEN TORTILLA SOUP',
       description: 'Chicken tortilla soup',
-      price: '6.99',
+      price: '7.49',
     },
     {
       title: 'SMALL GUACAMOLE',
       description: 'Chicken tortilla soup',
-      price: '5.49',
+      price: '5.99',
       addition: 'Large $8.99'
     },
   ];
@@ -61,28 +61,28 @@ export class MenuPage implements OnInit {
 
       title: ' 1/2doz OSTIONES / OYSTERS',
       description: '',
-      price: '11.99',
-      addition: '1doz $18.99'
+      price: '12.99',
+      addition: '1doz $20.49'
     },
     {
 
       title: 'CAMARONES A LA DIABLA',
       description: 'Diablo Style Shrimp',
-      price: '13.99',
+      price: '18.49',
       hot: 'ad'
     },
     {
 
       title: 'CAMARONES AGUACHILE',
       description: '',
-      price: '16.99',
+      price: '18.49',
       hot: 'ad',
     },
     {
 
       title: 'PLATO DE CEVICHE (CAMARON)',
       description: '',
-      price: '16.99',
+      price: '18.49',
     },
     {
       title: 'TOSTADA DE CEVICHE DE CAMARON',
@@ -95,17 +95,17 @@ export class MenuPage implements OnInit {
     {
       title: 'CAMARON / SHRIMP',
       description: '',
-      price: '14.99',
+      price: '16.49',
     },
     {
       title: 'OCTOPUS & SHRIMP',
       description: '',
-      price: '16.99',
+      price: '17.49',
     },
     {
       title: 'CAMPECHANA (SEAFOOD MIX)',
       description: '',
-      price: '17.49',
+      price: '18.49',
     },
   ];
 
@@ -113,61 +113,61 @@ export class MenuPage implements OnInit {
     {
       title: 'HARD SHELL TACO',
       description: 'Chicken or ground beef',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'TOSTADA DE CARNITAS',
       description: 'Shredded pork',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'CHIMICHANGA',
       description: 'Chicken, ground beef, or chile verde',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'QUESADILLA DE MASA ',
       description: 'Cheese, chicken, or ground beef',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'SMOTHERED BURRITO',
       description: 'Green or red chile w/pork',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'TOSTADA',
       description: 'Chicken, ground beef or beans',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'ENCHILADA',
       description: 'Cheese, chicken, ground beef, or chile verde',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'SOFT SHELL TACO',
       description: 'Chicken or ground beef',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'CHILE RELLENO',
       description: 'Cheese',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
     {
       title: 'TAMALES',
       description: 'Chicken or pork',
-      price: '13.99',
+      price: '14.99',
       addition: 'ADD CHEESE $1 - SHREDDED BEEF $1 - ADD SMOTHERED $1.50'
     },
   ];
@@ -176,32 +176,32 @@ export class MenuPage implements OnInit {
     {
       title: '2 CHILE VERDE',
       description: 'Green chile sauce with pork. A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '11.99',
-      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
+      price: '13.99',
+      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $2.00'
     },
     {
       title: '2 CHILE COLORADO',
       description: 'Red Chile sauce with pork. A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '11.99',
-      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
+      price: '13.99',
+      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $2.00'
     },
     {
       title: '2 GROUND BEEF',
       description: 'A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '11.99',
-      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
+      price: '13.99',
+      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $2.00'
     },
     {
       title: '2 CHICKEN',
       description: 'A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '11.99',
-      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
+      price: '13.99',
+      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $2.00'
     },
     {
       title: '2 SHREDDED BEEF',
       description: 'A deep fried burrito filled with mean and cheese. Served with rice, beans guacamole & sour cream.',
-      price: '12.99',
-      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $1.75'
+      price: '14.99',
+      addition: 'Smothered with red or green chile $1.50, Smothered with cheese $2.50, Enchilada style $2.00'
     },
   ];
 
@@ -209,27 +209,27 @@ export class MenuPage implements OnInit {
     {
       title: 'MENUDO',
       description: 'A mexican stew with beef tripe and hominy (no rice & beans)',
-      price: '9.49',
+      price: '13.99',
     },
     {
       title: 'HUEVOS RANCHEROS',
       description: '2 eggs with your choice of spicy ranchero salsa or chile verde with pork',
-      price: '8.99',
+      price: '10.49',
     },
     {
       title: 'HEUVOS CON JAMON',
       description: '2 eggs scrambled with diced ham',
-      price: '8.99',
+      price: '9.99',
     },
     {
       title: 'HUEVOS CON CHORIZO',
       description: 'Mexican sausage scrambled with eggs',
-      price: '8.99',
+      price: '10.99',
     },
     {
       title: 'CHILAQUILES',
       description: 'Tortilla chips and eggs scrambled with pico de gallo, salsa and topped with fresh mexican cheese',
-      price: '9.49',
+      price: '11.49',
     },
   ];
 
@@ -247,58 +247,58 @@ export class MenuPage implements OnInit {
     {
       title: 'SMOTHERED BURRITO',
       description: 'Filled with beans, green or red chile sauce with pork. Served with rice & beans',
-      price: '9.49',
+      price: '9.99',
     },
     {
       title: 'SMOTHERED BURRITO W/CHEESE',
       description: 'Green or red chile sauce with pork. Served with rice & beans',
-      price: '10.99',
+      price: '11.49',
     },
     {
       title: '2 SMOTHERED BURRITOS W/CHEESE',
       description: 'Green or red chile sauce with pork. Served with rice & beans',
-      price: '13.49',
+      price: '13.99',
     },
     {
       title: 'ASADA BURRITO',
       description: 'Steak, refried beans, pico de gallo, guacamole and salsa. Served with rice & beans',
-      price: '12.99',
+      price: '13.49',
     },
     {
       title: 'ADOBADA BURRITO',
       description: 'Marinated pork, refriend beans, pico de gallo,  guacamole and salsa. Served with rice & beans',
-      price: '10.99',
+      price: '11.99',
     },
     {
       title: 'CARNITAS BURRITO',
       description: 'Shredded pork, refried beans, pico de gallo, guacamole and salsa. Served with rice & beans',
-      price: '10.99',
+      price: '11.99',
     },
     {
       title: 'POLLO ASADO BURRITO',
       description: 'Grilled chicken, refried beans, pico de gallo, guacamole and salsa. Served with rice & beans',
-      price: '10.99',
+      price: '11.49',
     },
     {
       title: 'BEEF BURRITO',
       description: 'Ground beef, refried beans and cheddar cheese. Served with rice & beans',
-      price: '10.49',
+      price: '10.99',
       addition: 'Shredded beef add $1.00'
     },
     {
       title: 'CHICKEN BURRITO',
       description: 'Shredded chicken, refried beans and cheddar cheese. Served with rice & beans',
-      price: '10.49',
+      price: '10.99',
     },
     {
       title: 'VEGGIE BURRITO',
       description: 'Rice, whole beans, cheese, pico de gallo, guacamole, sour cream, and salsa. Served with rice & beans',
-      price: '9.49',
+      price: '9.99',
     },
     {
       title: 'SUPER BURRITO',
       description: 'Your choice of Asada, Carnitas, or Pollo Asado. Super sized tortilla filled with rice, beans, guacamole, sour cream, pico de gallo, and salsa. Served with rice & beans',
-      price: '12.99',
+      price: '13.49',
     },
   ];
 
@@ -306,37 +306,37 @@ export class MenuPage implements OnInit {
     {
       title: '3 RANCHERAS',
       description: 'Tortillas fried in salsa roja and filled with chicken and fresh Mexican cheese',
-      price: '12.49',
+      price: '12.99',
       addition: 'Add sour cream for $0.75 - sub flour tortilla $0.50'
     },
     {
       title: '3 ENTOMATADAS',
       description: 'Made in seasoned tomato sauce, filled with chicken and fresh Mexican cheese',
-      price: '12.49',
+      price: '12.99',
       addition: 'Add sour cream for $0.75 - sub flour tortilla $0.50'
     },
     {
       title: '2 CHILE VERDE ENCHILADAS',
       description: 'Served with rice & beans.',
-      price: '11.99',
+      price: '12.99',
       addition: 'Add sour cream for $0.75 - sub flour tortilla $0.50'
     },
     {
       title: '2 CHICKEN OR BEEF ENCHILADAS',
       description: 'Served with rice & beans.',
-      price: '11.49',
+      price: '12.99',
       addition: 'Add sour cream for $0.75 - sub flour tortilla $0.50'
     },
     {
       title: '2 CHEESE ENCHILADAS',
       description: 'Served with rice & beans.',
-      price: '10.99',
+      price: '11.99',
       addition: 'Add sour cream for $0.75 - sub flour tortilla $0.50'
     },
     {
       title: '2 SHREDDED BEEF ENCHILADAS',
       description: 'Served with rice & beans.',
-      price: '12.49',
+      price: '12.99',
       addition: 'Add sour cream for $0.75 - sub flour tortilla $0.50'
     },
   ];
@@ -345,22 +345,22 @@ export class MenuPage implements OnInit {
     {
       title: 'CHEESE',
       description: 'Monteray Jack and Cheddar cheese',
-      price: '8.99',
+      price: '9.49',
     },
     {
       title: 'CHICKEN',
       description: 'Chicken and Monterray Jack cheese',
-      price: '10.99',
+      price: '11.99',
     },
     {
       title: 'ASADA',
       description: 'Grilled Steak',
-      price: '11.99',
+      price: '12.99',
     },
     {
       title: 'SHRIMP FAJITA',
       description: 'Shrimp, bell peppers, mushroom, onions, tomatoes, cilantro, Monterrey Jack and Cheddar cheese',
-      price: '12.49',
+      price: '13.49',
     },
   ];
 
@@ -368,27 +368,27 @@ export class MenuPage implements OnInit {
     {
       title: 'ADOBADA',
       description: 'Marinated pork. Served with Lettuce, Tomato, Mayo, Mustard, Avacado, Onions, and French fries',
-      price: '11.49',
+      price: '12.99',
     },
     {
       title: 'ASADA',
       description: 'Grilled Steak. Served with Lettuce, Tomato, Mayo, Mustard, Avacado, Onions, and French fries',
-      price: '11.49',
+      price: '12.99',
     },
     {
       title: 'POLLO ASADO',
       description: 'Grilled chicken. Served with Lettuce, Tomato, Mayo, Mustard, Avacado, Onions, and French fries',
-      price: '11.49',
+      price: '12.99',
     },
     {
       title: 'CARNITAS',
       description: 'Shredded pork. Served with Lettuce, Tomato, Mayo, Mustard, Avacado, Onions, and French fries',
-      price: '11.49',
+      price: '12.99',
     },
     {
       title: 'JAMON Y QUESO',
       description: 'Ham & cheese. Served with Lettuce, Tomato, Mayo, Mustard, Avacado, Onions, and French fries',
-      price: '11.49',
+      price: '12.99',
     },
   ];
 
@@ -396,27 +396,27 @@ export class MenuPage implements OnInit {
     {
       title: '2 CHEESE QUESADILLAS DE MASA',
       description: 'Served with rice, beans, guacamole & sour cream. Deep fried cornmeal quesadilla stuffed with your choice of filling and monterrey jack cheese',
-      price: '10.49',
+      price: '12.99',
     },
     {
       title: '2 CHICKEN QUESADILLAS DE MASA',
       description: 'Served with rice, beans, guacamole & sour cream. Deep fried cornmeal quesadilla stuffed with your choice of filling and monterrey jack cheese',
-      price: '10.49',
+      price: '12.99',
     },
     {
       title: '2 BEEF QUESADILLAS DE MASA',
       description: 'Served with rice, beans, guacamole & sour cream. Deep fried cornmeal quesadilla stuffed with your choice of filling and monterrey jack cheese',
-      price: '10.49',
+      price: '12.99',
     },
     {
       title: '2 CARNE ASADA QUESADILLAS DE MASA',
       description: 'Served with rice, beans, guacamole & sour cream. Deep fried cornmeal quesadilla stuffed with your choice of filling and monterrey jack cheese',
-      price: '11.49',
+      price: '13.99',
     },
     {
       title: '2 SHRIMP QUESADILLAS DE MASA',
       description: 'Served with rice, beans, guacamole & sour cream. Deep fried cornmeal quesadilla stuffed with your choice of filling and monterrey jack cheese',
-      price: '11.49',
+      price: '13.99',
     },
   ];
 
@@ -424,55 +424,55 @@ export class MenuPage implements OnInit {
     {
       title: 'CAMARONES A LA DIABLA',
       description: 'Shrimp sauteed with a very spicy salsa. Served with rice & beans - whole beans, available upon request',
-      price: '16.99',
+      price: '17.99',
       hot: 'ad',
     },
     {
       title: 'ALAMBRES DE CAMARON',
       description: '2 Shrimp skewers with spicy barbecue sauce. Served with rice & beans - whole beans, available upon request',
-      price: '16.99',
+      price: '17.99',
       hot: 'ad',
     },
     {
       title: 'CALDO DE CAMARON',
       description: 'Shrimp soup. Served with rice & beans - whole beans, available upon request',
-      price: '16.99',
+      price: '17.99',
     },
     {
       title: 'SIETE MARES',
       description: 'Sea food mix soup. Served with rice & beans - whole beans, available upon request',
-      price: '17.99',
+      price: '18.99',
     },
     {
       title: 'CAMARONES RANCHEROS',
       description: 'Shrimpo sauteed with onions, tomatos and salsa. Served with rice & beans - whole beans, available upon request',
-      price: '16.99',
+      price: '17.99',
       hot: 'dfa',
     },
     {
       title: 'CAMARONES AL MOJO DE AJO',
       description: 'Shrimp sautéed with butter and garlic',
-      price: '16.99',
+      price: '17.99',
     },
     {
       title: 'CAMARONES EMPANIZADOS',
       description: '7 breaded shrimp with french fries',
-      price: '15.49',
+      price: '16.99',
     },
     {
       title: 'PESCADO FRITO (TRUCHA ENTERA)',
       description: 'Fried trout. Served with rice & beans - whole beans, available upon request',
-      price: '13.99',
+      price: '14.99',
     },
     {
       title: 'MOJARRA (Entera)',
       description: 'Tilapia',
-      price: '14.99',
+      price: '15.99',
     },
     {
       title: 'MOJARRA (Filete)',
       description: 'Tilapia',
-      price: '14.99',
+      price: '16.49',
     },
   ];
 
@@ -480,38 +480,38 @@ export class MenuPage implements OnInit {
     {
       title: 'CARNE ASADA',
       description: 'Grilled skirt steak slices (Ranchera). Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '15.99',
+      price: '17.49',
     },
     {
       title: 'BISTEK RANCHERO',
       description: 'Steak slices sauteed with tomatoes, onions, cilantro, and a spicy salsa. Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '15.99',
+      price: '16.99',
     },
     {
       title: 'BISTEK ENCEBOLLADO',
       description: '10 oz Rib eye steak toped with grilled onions and spicy salsa. Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '18.99',
+      price: '19.99',
     },
     {
       title: 'POLLO ASADO',
       description: 'Grilled chicken breast layed on a bed of french fries. Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '14.99',
+      price: '15.99',
     },
     {
       title: 'ALAMBRES DE POLLO',
       description: '2 Spicy chicken skewers. Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '14.99',
+      price: '16.49',
       hot: 'adf',
     },
     {
       title: 'CARNITAS',
       description: 'Shredded pork. Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '14.99'
+      price: '15.99'
     },
     {
       title: 'COSTILLAS - RIBS',
       description: 'Baby back ribs with your choice of spicy barbecue or tamatillo sauce. Served with rice, beans, & tortillas. Whole beans available upon request.',
-      price: '16.49'
+      price: '18.49'
     },
   ];
 
@@ -519,22 +519,22 @@ export class MenuPage implements OnInit {
     {
       title: 'CHICKEN FAJITAS',
       description: 'Grilled chicken tenders. Grilled with fresh bell peppers, onions, tomatoes, cilantro and mushrooms served with rice, beans, guacamole, soure cream & torillas.',
-      price: '14.99',
+      price: '15.99',
     },
     {
       title: 'BEEF FAJITAS',
       description: 'Beef Fajitas. Grilled with fresh bell peppers, onions, tomatoes, cilantro and mushrooms served with rice, beans, guacamole, soure cream & torillas.',
-      price: '16.99',
+      price: '17.99',
     },
     {
       title: 'SHRIMP FAJITAS',
       description: 'Shrimp Fajitas. Grilled with fresh bell peppers, onions, tomatoes, cilantro and mushrooms served with rice, beans, guacamole, soure cream & torillas.',
-      price: '16.99',
+      price: '18.49',
     },
     {
       title: 'COMBINATION FAJITAS',
       description: 'Steak, chicken and shrimp. Grilled with fresh bell peppers, onions, tomatoes, cilantro and mushrooms served with rice, beans, guacamole, soure cream & torillas.',
-      price: '19.99',
+      price: '21.49',
     },
   ];
 
@@ -542,17 +542,17 @@ export class MenuPage implements OnInit {
     {
       title: 'BOWL OF CHILE VERDE OR COLORADO',
       description: 'Green or red chile with pork (Not served with rice & beans). Served with tortillas.',
-      price: '9.99',
+      price: '10.99',
     },
     {
       title: 'CHILE VERDE OR COLORADO PLATTER',
       description: 'Green or red chile with pork. Served with rice, beans, and torillas.',
-      price: '11.49',
+      price: '12.49',
     },
     {
       title: '2 CHILES RELLENOS',
       description: 'Fire roasted chile pepper stuffed with Monterrey Jack cheese. Served with rice, beans, and tortillas.',
-      price: '14.99',
+      price: '16.49',
     },
   ];
 
@@ -560,12 +560,12 @@ export class MenuPage implements OnInit {
     {
       title: '2 HOMEMADE PORK TAMALES',
       description: 'Served with rice & beans',
-      price: '9.49',
+      price: '12.99',
     },
     {
       title: '2 HOMEMADE CHICKEN TAMALES',
       description: 'Served with rice & beans',
-      price: '9.49',
+      price: '12.99',
     },
   ];
 
@@ -573,17 +573,17 @@ export class MenuPage implements OnInit {
     {
       title: 'GROUND BEEF OR CHICKEN',
       description: 'Served with rice, beans, guacamole, & sour cream',
-      price: '9.99',
+      price: '11.99',
     },
     {
       title: 'SHREDDED BEEF',
       description: 'Served with rice, beans, guacamole, & sour cream',
-      price: '9.99',
+      price: '11.99',
     },
     {
       title: 'CARNITAS',
       description: 'Shredded pork. Served with rice, beans, guacamole, & sour cream',
-      price: '9.99',
+      price: '11.99',
     },
   ];
 
@@ -591,12 +591,12 @@ export class MenuPage implements OnInit {
     {
       title: '2 HARD SHELL TACOS',
       description: 'Chicken or ground beef (shredded beef add $1). Served with rice & beans',
-      price: '8.49',
+      price: '9.99',
     },
     {
       title: 'SOFT SHELL TACO',
       description: 'Homemade flour tortillas wit hchicken or ground beef (Shredded beef or Carnitas add $1). Served with rice & beans',
-      price: '8.99',
+      price: '10.49',
     },
   ];
 
@@ -604,37 +604,37 @@ export class MenuPage implements OnInit {
     {
       title: 'POLLO ASADO',
       description: 'Grilled chicken. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.49',
+      price: '9.99',
     },
     {
       title: 'ADOBADA',
       description: 'Marinated pork. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.49',
+      price: '9.99',
     },
     {
       title: 'ASADA',
       description: 'Steak. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.49',
+      price: '10.49',
     },
     {
       title: 'CARNITAS',
       description: 'Shredded pork. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.49',
+      price: '9.99',
     },
     {
       title: 'LENGUA',
       description: 'Beef tongue (Orders of 4 only). Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '8.99',
+      price: '11.99',
     },
     {
       title: 'CAMARON',
       description: 'Shrimp. Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '9.99',
+      price: '11.99',
     },
     {
       title: 'PESCADO',
       description: 'Fish (Orders of 4 only). Small corn tortillas topped w/ your choice of meant, pico de gallo, and salsa.',
-      price: '9.99',
+      price: '11.99',
     },
 
   ];
