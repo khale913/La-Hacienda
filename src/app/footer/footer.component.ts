@@ -25,6 +25,10 @@ export class FooterComponent implements OnInit {
     if (page === 'careers') {
       this.router.navigate(['/tabs/tab4']);
     }
+
+    if (page === 'review') {
+      this.router.navigate(['/tabs/review']);
+    }
   }
 
 }
