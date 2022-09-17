@@ -36,7 +36,7 @@ ion-tab-bar{
   border: none;
   border-style: none;
   // border-radius: 5px;
-  box-shadow: 0 4px 2px -2px rgb(200, 200, 200);
+  // box-shadow: 0 4px 2px -2px rgb(200, 200, 200);
 }
 
 .brick-pattern {
@@ -53,12 +53,12 @@ ion-tab-button {
   --ripple-color: transparent;
   color: rgb(181, 0, 0);
   --color-selected: rgba(0, 0, 0, 0.34);
-  margin-right: 1rem;
+  margin-right: 3rem;
   font-size: 1.1rem;
 }
 
 .hacienda-img {
-  max-width: 300px;
+  max-width: 325px;
   z-index: 9999;
 }
 
@@ -113,8 +113,8 @@ ion-label:hover {
 .under-title {
   color: black;
   // color: red;
-  font-size: 1.1rem;
-  letter-spacing: .5px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .icon-div {
