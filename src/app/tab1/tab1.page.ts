@@ -8,7 +8,7 @@ import { NavMenuPage } from '../nav-menu/nav-menu.page';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  Imagedata: any = ['../../assets/images/facebookhomeimg.jpeg', '../../assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg', '../../assets/images/pexels-chitokan-2087748.jpg'];
+  Imagedata: any = ['../../assets/images/facebookhomeimg.jpeg', '../../assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg',];
   startIndex: any = 1;
   constructor(public router: Router, public modalCtrl: ModalController,) { }
 
