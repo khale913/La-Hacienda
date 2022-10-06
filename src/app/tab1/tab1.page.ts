@@ -8,7 +8,7 @@ import { NavMenuPage } from '../nav-menu/nav-menu.page';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  Imagedata: any = ['../../assets/images/facebookhomeimg.jpeg', '../../assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg', '../../assets/images/HardshellTacos.jpg'];
+  Imagedata: any = ['../../assets/images/facebookhomeimg.jpg', '../../assets/images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg', '../../assets/images/christine-siracusa-vzX2rgUbQXM-unsplash.jpg', 'https://cdn.pixabay.com/photo/2017/03/09/00/45/shrimp-2128220_1280.jpg'];
   startIndex: any = 1;
   constructor(public router: Router, public modalCtrl: ModalController,) { }
 

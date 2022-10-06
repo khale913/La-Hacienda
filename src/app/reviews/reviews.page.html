@@ -8,6 +8,73 @@
   <div class="header-img">
     <!-- <img src="../../assets/images/Enchiladas.jpg" alt=""> -->
     <h2 class="header-title">REVIEW US</h2>
+
+  </div>
+
+  <div class="review-content-container">
+    <div class="top-description">
+      <h2>Thank you for taking the time to share your experience with us!</h2>
+      <p>Your review allows us to better not only your future experience but to help other customers as well. We pride
+        our
+        selves on our customer service and like to jump at every opportunity to improve.</p>
+    </div>
+    <div class="locations-container">
+      <div (click)="switchReview('slc')" class="location" [ngClass]="{'active-tab': activeReview === 'slc'}">
+        <p><span>{{activeReview === 'slc' ? '-' : '+'}}</span> Salt Lake City, UT</p>
+      </div>
+      <div class="review" *ngIf="activeReview === 'slc'">
+        <div class="review-info">
+          <p>Please select an icon to leave a review</p>
+        </div>
+        <div class="review-img">
+          <a target="_blank"
+            href="https://www.google.com/maps/place/La+Hacienda+Salt+Lake/@40.7423285,-111.9420312,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f4bcde605a91:0x7df64193be3901f6!8m2!3d40.7423258!4d-111.9397696">
+            <img class="google-logo" alt="google review logo" src="../../assets/icon/google-logo.png">
+          </a>
+          <a target="_blank" href="https://www.yelp.com/biz/la-hacienda-salt-lake-city">
+            <img src="../../assets/icon/yelp-logo.png" alt="" class="yelp-logo">
+          </a>
+        </div>
+      </div>
+
+
+      <div class="location" (click)="switchReview('sj')" [ngClass]="{'active-tab': activeReview === 'sj'}">
+        <p><span>{{activeReview === 'sj' ? '-' : '+'}}</span> South Jordan, UT</p>
+      </div>
+      <div class="review" *ngIf="activeReview === 'sj'">
+        <div class="review-info">
+          <p>Please select an icon to leave a review</p>
+        </div>
+        <div class="review-img">
+          <a target="_blank"
+            href="https://www.google.com/maps/place/La+Hacienda+South+Jordan/@40.5384868,-111.9814744,17z/data=!3m1!4b1!4m5!3m4!1s0x87528566cdda3cb7:0xe763d19b2cdeaa19!8m2!3d40.5384482!4d-111.9771861">
+            <img class="google-logo" alt="google review logo" src="../../assets/icon/google-logo.png">
+          </a>
+          <a target="_blank" href="https://www.yelp.com/biz/la-hacienda-south-jordan">
+            <img src="../../assets/icon/yelp-logo.png" alt="" class="yelp-logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="location" (click)="switchReview('dr')" [ngClass]="{'active-tab': activeReview === 'dr'}">
+        <p><span>{{activeReview === 'dr' ? '-' : '+'}}</span> Draper, UT</p>
+      </div>
+      <div class="review" *ngIf="activeReview === 'dr'">
+        <div class="review-info">
+          <p>Please select an icon to leave a review</p>
+        </div>
+        <div class="review-img">
+          <a target="_blank"
+            href="https://www.google.com/maps/place/La+Hacienda+Draper/@40.5384656,-112.0493257,12z/data=!4m13!1m6!3m5!1s0x87528716d0a0bc39:0x1bfbd46641479e5e!2sLa+Hacienda+Draper!8m2!3d40.5252998!4d-111.8890665!3m5!1s0x87528716d0a0bc39:0x1bfbd46641479e5e!8m2!3d40.5252998!4d-111.8890665!15sChNsYSBoYWNpZW5kYSBkcmFwZWVyWhUiE2xhIGhhY2llbmRhIGRyYXBlZXKSARJtZXhpY2FuX3Jlc3RhdXJhbnTgAQA">
+            <img class="google-logo" alt="google review logo" src="../../assets/icon/google-logo.png">
+          </a>
+          <a target="_blank" href="https://www.yelp.com/biz/la-hacienda-draper">
+            <img src="../../assets/icon/yelp-logo.png" alt="" class="yelp-logo">
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 

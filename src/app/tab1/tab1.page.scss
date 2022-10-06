@@ -321,16 +321,16 @@ section {
   -webkit-animation-duration: 3s;
   animation-name: fade;
   animation-duration: 3s;
-  transition: all .2s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .6}
+  from {opacity: .8}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .6}
+  from {opacity: .8}
   to {opacity: 1}
 }
 

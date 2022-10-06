@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reviews.page.scss'],
 })
 export class ReviewsPage implements OnInit {
-
+  activeReview: string = 'slc';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  switchReview(rev: string) {
+    this.activeReview = rev;
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-tab6',
   templateUrl: './tab6.page.html',
@@ -12,10 +12,14 @@ export class Tab6Page implements OnInit {
   defaultImage2 = 'https://miro.medium.com/max/441/1*9EBHIOzhE1XfMYoKz1JcsQ.gif';
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log('about us');
+  }
+
+  navLocation() {
+    this.router.navigate(['/tabs/tab3']);
   }
 
 }
