@@ -127,8 +127,23 @@ ion-content {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
+  .review-content-container {
+    flex-direction: column;
+    margin: 0;
+  }
 
+  .locations-container {
+    margin-top: 50px;
+  }
+
+  .top-description {
+    margin-left: 1rem;
+  }
+
+  .top-description p {
+    margin-top: .5rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
