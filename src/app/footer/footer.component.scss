@@ -39,6 +39,8 @@
   font-size: 1.2rem;
   margin-bottom: .5rem;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-tab-sub:hover {
@@ -59,14 +61,17 @@
   cursor:default;
 }
 
-.siteBy span {
+.siteBy a {
   cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
-.siteBy span:hover {
+.siteBy a:hover {
   transition: .3s;
   color: black;
-  font-weight: 500;
+  // font-weight: 500;
 }
 
 @media only screen and (max-width: 1200px) {
