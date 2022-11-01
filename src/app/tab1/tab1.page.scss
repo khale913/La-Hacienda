@@ -318,10 +318,10 @@ section {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 5s;
   animation-name: fade;
-  animation-duration: 3s;
-  transition: all 3s ease-in-out;
+  animation-duration: 5s;
+  transition: all 5s ease-in-out;
 }
 
 @-webkit-keyframes fade {
