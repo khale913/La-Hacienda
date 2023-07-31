@@ -50,7 +50,7 @@ export class MenuPage implements OnInit {
     },
     {
       title: 'SMALL GUACAMOLE',
-      description: 'Chicken tortilla soup',
+      description: 'Guacamole',
       price: '5.99',
       addition: 'Large $8.99'
     },
